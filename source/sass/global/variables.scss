@@ -1,0 +1,27 @@
+$basic-black: #1d1613;
+$basic-brown: #a87b62;
+$basic-white: #ffffff;
+$bg-beige: #f0eae4;
+$bg-black: #000000;
+$bg-range: #f0eae4;
+$border-grey: #f6f5f4;
+$field-white: rgba(255, 255, 255, 0.15);
+$filter-brown: rgba(86, 64, 52, 0.7);
+$placeholder-grey: #9b9997;
+$text-black: #1d1613;
+
+// fonts
+
+$poppins: "Poppins", "Arial", sans-serif;
+$cormorant: "Cormorant Garamond", "Times", serif;
+
+// brackpoint
+
+$mobile-width: 320px;
+$tablet-width: 767px;
+$desktop-width: 1023px;
+
+// media
+
+$tablet: "only screen and (max-width: #{$large})";
+$mobile: "only screen and (max-width: #{$medium})";
