@@ -1,0 +1,16 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h2 {
+    @include title;
+  }
+}
+.blog__link {
+}
+.blog__list {
+}
+.blog__item {
+}
+

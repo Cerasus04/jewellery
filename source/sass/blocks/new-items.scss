@@ -1,0 +1,16 @@
+.new-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h2 {
+    @include title;
+    margin: 0 50px 28px;
+  }
+}
+.new-items__link {
+  margin: 0 50px 28px;
+  // text-align: center;
+}
+.new-items__container {
+}

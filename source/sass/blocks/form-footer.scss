@@ -1,0 +1,58 @@
+.form-footer__container {
+  display: flex;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $basic-white;
+
+  & input {
+    width: 100%;
+    padding: 5px 0;
+    padding-right: 10px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $basic-white;
+    background-color: $bg-black;
+    border: none;
+
+    &::placeholder {
+      color: $placeholder-grey;
+    }
+
+    &:focus,
+    &:hover {
+      color: $basic-black;
+      background-color: $basic-white;
+      outline: none;
+    }
+  }
+}
+.form-footer__button {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: $basic-white;
+
+  background-color: $bg-black;
+  border: none;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.form-footer__button svg {
+  margin-left: 12px;
+}

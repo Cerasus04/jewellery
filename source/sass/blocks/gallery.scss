@@ -1,0 +1,16 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h2 {
+    @include title;
+  }
+}
+.gallery__link {
+}
+
+.gallery__list {
+}
+.gallery__item {
+}

@@ -1,0 +1,104 @@
+.footer {
+  color: $basic-white;
+  background-color: $bg-black;
+}
+
+.footer__container {
+  width: 85.6%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 98px 0;
+
+  @media (max-width: $desktop-width) {
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-right: 163px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 50px 15px 60px;
+  }
+}
+
+.footer__sign-up {
+  outline: 1px solid white;
+  max-width: 500px;
+  margin-right: auto;
+  flex-grow: 1;
+  & h2 {
+    @include title;
+    letter-spacing: 0.8px;
+    text-align: left;
+  }
+
+  & p {
+    margin: 0 0 38px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $placeholder-grey;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    max-width: unset;
+    margin-right: 0;
+    margin-bottom: 49px;
+
+    & h2 {
+      margin-right: 50px;
+      margin-bottom: 12px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 47px;
+
+    & p {
+      margin-right: 50px;
+    }
+  }
+}
+
+.footer__nav {
+  outline: 1px solid white;
+
+  flex-grow: 1;
+  max-width: 357px;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-left: 20px;
+
+  @media (max-width: $desktop-width) {
+    max-width: 66.7%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    max-width: unset;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+}
+
+.footer__socials {
+  outline: 1px solid white;
+  margin-top: 7px;
+  margin-left: 35px;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 0;
+    margin-right: -12px;
+    margin-left: 10px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+  }
+}

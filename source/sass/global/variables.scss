@@ -20,8 +20,6 @@ $cormorant: "Cormorant Garamond", "Times", serif;
 $mobile-width: 320px;
 $tablet-width: 767px;
 $desktop-width: 1023px;
+$desktop: 1366px;
 
-// media
 
-$tablet: "only screen and (max-width: #{$desktop-width})";
-$mobile: "only screen and (max-width: #{$tablet-width})";

@@ -1,0 +1,30 @@
+.user-menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.user-menu__modal-login {
+}
+.user-menu__cart {
+  padding-left: 31px;
+
+  & p {
+    margin: 0;
+  }
+
+  @media (max-width: $desktop-width) {
+    & p {
+      display: none;
+    }
+  }
+
+}
+
+.user-menu__icon {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
+}

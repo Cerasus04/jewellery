@@ -1,0 +1,17 @@
+.faq {
+  & h2 {
+    @include title;
+  }
+}
+.faq__list {
+}
+.faq__item {
+}
+.faq__button {
+}
+.faq__icon {
+}
+.faq__icon--open {
+}
+.faq__icon--close {
+}
