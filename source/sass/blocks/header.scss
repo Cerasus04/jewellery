@@ -18,10 +18,28 @@
     height: 1px;
     background-color: $border-grey;
   }
+
+  @media (max-width: $desktop-width) {
+    min-height: 106px;
+    padding: 52px 44px 0 32px;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.header__top {
+  display: flex;
+  flex-grow: 1;
 }
 .header__logo {
   outline: 1px solid blue;
   margin: -13px auto 50px;
+
+  @media (max-width: $desktop-width) {
+    margin: -22px auto 9px;
+  }
 }
 .header__search {
   position: relative;
@@ -42,6 +60,34 @@
     font-size: 14px;
     color: $placeholder-grey;
   }
+
+  @media (max-width: $desktop-width) {
+    display: none;
+    width: 100%;
+    order: 0;
+    margin-bottom: 42px;
+
+    & input {
+      width: 100%;
+      padding: 12px 12px 12px 36px;
+      background-color: $field-white;
+      border-radius: 21px;
+    }
+
+    & input::placeholder {
+      color: transparent;
+    }
+
+    & label {
+      top: 13px;
+      left: 16px;
+
+      & svg {
+        color: $basic-white;
+      }
+    }
+
+  }
 }
 .header__nav {
   outline: 1px solid blue;
@@ -53,10 +99,11 @@
 
   @media (max-width: $desktop-width) {
     display: none;
-    top: 0;
-    left: 0;
+    position: relative;
+    bottom: unset;
+    left: unset;
+    transform: unset;
     width: 100%;
-    background-color: $basic-brown;
   }
 }
 .header__nav-list {
@@ -65,8 +112,92 @@
 }
 .header__user-menu {
   outline: 1px solid blue;
-  width: 17.5%;
+  width: 21.5%;
+
+  @media (max-width: $desktop-width) {
+    width: 5.5%;
+  }
 }
 .header__burger-btn {
   display: none;
+
+  @media (max-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    order: -1;
+  }
+
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.header--js {
+  @media (max-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 778px;
+    padding: 53px 43px 77px 42px;
+    margin-bottom: 0;
+    background-color: $basic-brown;
+
+    & .header__top {
+      flex-grow: 0;
+      padding-bottom: 25px;
+    }
+
+    & .header__burger-btn {
+      margin-left: -10px;
+      & svg {
+        color: $basic-white;
+      }
+    }
+
+    & .header__logo {
+      & svg {
+        color: $basic-white;
+      }
+    }
+
+    & .header__search {
+      display: flex;
+
+      & input {
+        color: $basic-white;
+      }
+    }
+
+    & .header__nav {
+      display: block;
+    }
+
+    & .user-menu__icon {
+      color: $basic-white;
+      fill: transparent;
+    }
+
+    & .sub-list {
+      display: flex;
+    }
+
+    & .user-menu__modal-login {
+      display: block;
+      color: $basic-white;
+      left: 48px;
+      bottom: 75px;
+    }
+  }
 }

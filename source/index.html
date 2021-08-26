@@ -12,13 +12,30 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
-  <header class="page__header header">
-    <div class="header__logo">
-      <a aria-label="Logo Jewellery" id="top">
-        <svg width="66" height="66">
-          <use href="img/sprite.svg#icon-logo"></use>
+  <header class="page__header header header--js">
+    <div class="header__top">
+      <button class="header__burger-btn" aria-label="Menu">
+        <svg width="25" height="18">
+          <use href="img/sprite.svg#icon-burger"></use>
         </svg>
-      </a>
+      </button>
+      <div class="header__logo">
+        <a aria-label="Logo Jewellery" id="top">
+          <svg width="66" height="66">
+            <use href="img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="header__user-menu user-menu">
+        <a class="user-menu__modal-login" href="modal-login.html" aria-label="Enter modal-login">Login
+        </a>
+        <a class="user-menu__cart" href="#">
+          <svg class="user-menu__icon" width="20" height="18">
+            <use href="img/sprite.svg#icon-cart"></use>
+          </svg>
+          <p>Cart <span>0</span></p>
+        </a>
+      </div>
     </div>
     <form action="https://echo.htmlacademy.ru" class="header__search" method="POST">
       <label for="search">
@@ -59,21 +76,6 @@
         </li>
       </ul>
     </nav>
-    <div class="header__user-menu user-menu">
-      <a class="user-menu__modal-login" href="modal-login.html" aria-label="Enter modal-login">Login
-      </a>
-      <a class="user-menu__cart" href="#">
-        <svg class="user-menu__icon" width="20" height="18">
-          <use href="img/sprite.svg#icon-cart"></use>
-        </svg>
-        <p>Cart <span>0</span></p>
-      </a>
-    </div>
-    <button class="header__burger-btn" aria-label="Menu">
-      <svg width="25" height="18">
-        <use href="img/sprite.svg#icon-burger"></use>
-      </svg>
-    </button>
   </header>
   <main class="page__main main">
     <h1 class="visually-hidden">Jewellery shop</h1>
