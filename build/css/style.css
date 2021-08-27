@@ -98,9 +98,14 @@ ul {
   list-style: none; }
 
 .section-link {
-  margin: 35px 50px 28px;
+  padding-bottom: 5px;
   text-align: center;
+  line-height: 26px;
   border-bottom: 1px solid #a87b62; }
+  .section-link:focus, .section-link:hover {
+    opacity: 0.5; }
+  .section-link:active {
+    opacity: 0.7; }
 
 .page {
   position: relative;
@@ -477,7 +482,8 @@ ul {
       padding: 130px 15px 0; } }
 
 .main__gallery {
-  padding-top: 108px; }
+  padding-top: 108px;
+  padding-bottom: 132px; }
 
 .promo {
   position: relative;
@@ -606,7 +612,7 @@ ul {
     margin: 0 50px 28px; }
 
 .new-items__link {
-  margin: 0 50px 28px; }
+  margin: 35px 50px 28px; }
 
 .blog {
   display: -webkit-box;
@@ -627,6 +633,144 @@ ul {
     line-height: 44px;
     letter-spacing: 0em;
     text-align: center; }
+
+.blog__link {
+  margin: 35px 50px 28px; }
+
+.blog__list {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%; }
+  @media (max-width: 1023px) {
+    .blog__list {
+      grid-gap: 50px;
+      grid-template-columns: unset;
+      grid-template-rows: unset; } }
+  @media (max-width: 767px) {
+    .blog__list {
+      grid-gap: 40px; } }
+
+.blog__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.blog__item:nth-child(3n) {
+  grid-column: 2/3;
+  grid-row: 1/3; }
+  @media (max-width: 1023px) {
+    .blog__item:nth-child(3n) {
+      grid-column: unset;
+      grid-row: unset; } }
+
+.post {
+  display: grid;
+  width: 100%;
+  background-color: #f0eae4;
+  grid-template-columns: 1fr 1fr; }
+  @media (max-width: 767px) {
+    .post {
+      grid-template-columns: unset;
+      grid-template-rows: 1fr 1fr; } }
+
+.post__img {
+  position: relative;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  width: 100%; }
+
+.post__img--second {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+  @media (max-width: 767px) {
+    .post__img--second {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; } }
+
+.post--big {
+  grid-row-gap: 30px;
+  grid-template-rows: 1fr 1fr; }
+  .post--big .post__content {
+    position: relative;
+    z-index: 1;
+    grid-column: 2/3;
+    grid-row: 2/3; }
+  .post--big .post__img {
+    grid-column: 1/-1;
+    grid-row: 1/-1; }
+  @media (max-width: 1023px) {
+    .post--big {
+      grid-row-gap: unset;
+      grid-template-rows: unset; }
+      .post--big .post__img {
+        grid-column: unset;
+        grid-row: unset; }
+      .post--big .post__content {
+        grid-column: unset;
+        grid-row: unset; } }
+  @media (max-width: 767px) {
+    .post--big {
+      grid-template-rows: 1fr 1fr; } }
+
+.post__img picture,
+.post__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center; }
+
+.post__content {
+  padding: 65px 60px 70px 60px;
+  text-align: center;
+  background-color: #f0eae4; }
+  @media (max-width: 1023px) {
+    .post__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-right: 85px;
+      padding-left: 85px; } }
+  @media (max-width: 767px) {
+    .post__content {
+      padding: 30px 60px 32px 60px; } }
+
+.post__content time {
+  display: block;
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #9b9997; }
+
+.post__content h3 {
+  margin: 0;
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  font-family: "Cormorant Garamond", "Times", serif;
+  color: #1d1613; }
 
 .faq h2 {
   margin: 0;
@@ -656,6 +800,52 @@ ul {
     line-height: 44px;
     letter-spacing: 0em;
     text-align: center; }
+
+.gallery__link {
+  margin: 35px 50px 28px; }
+
+.gallery__list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  -webkit-column-gap: 27px;
+     -moz-column-gap: 27px;
+          column-gap: 27px;
+  row-gap: 34px; }
+  @media (max-width: 767px) {
+    .gallery__list {
+      grid-gap: 15px;
+      grid-template-columns: 44.8% auto;
+      grid-template-rows: 35% 24% 32%; } }
+
+.gallery__item--big {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3; }
+  @media (max-width: 767px) {
+    .gallery__item--big {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3; } }
+
+.gallery__item picture,
+.gallery__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center; }
+
+@media (max-width: 767px) {
+  .gallery__item:nth-child(7n + 3) {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .gallery__item:nth-child(7n + 4) {
+    display: none; } }
 
 .footer {
   color: #ffffff;
