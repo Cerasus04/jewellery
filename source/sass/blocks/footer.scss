@@ -16,11 +16,11 @@
     width: 100%;
     flex-wrap: wrap;
     padding-top: 50px;
-    padding: 60px 150px 60px 45px;
+    padding: 48px 163px 54px 45px;
   }
 
   @media (max-width: $tablet-width) {
-    padding: 60px 15px;
+    padding: 50px 15px;
   }
 }
 
@@ -29,6 +29,7 @@
   max-width: 500px;
   margin-right: auto;
   flex-grow: 1;
+
   & h2 {
     @include title;
     letter-spacing: 0.8px;
@@ -47,11 +48,15 @@
     width: 100%;
     max-width: unset;
     margin-right: 0;
-    margin-bottom: 49px;
+    margin-bottom: 44px;
 
     & h2 {
       margin-right: 50px;
       margin-bottom: 12px;
+    }
+
+    & p {
+      margin-right: 36px;
     }
   }
 
@@ -95,7 +100,7 @@
   @media (max-width: $desktop-width) {
     margin-top: 0;
     margin-right: -12px;
-    margin-left: 10px;
+    margin-left: 0;
   }
 
   @media (max-width: $tablet-width) {

@@ -151,6 +151,11 @@ ul {
       padding: 52px 44px 0 32px; }
       .header::after {
         content: none; } }
+  @media (max-width: 767px) {
+    .header {
+      min-height: 92px;
+      padding: 38px 15px 50px;
+      margin-bottom: 0; } }
 
 .header__top {
   display: -webkit-box;
@@ -290,6 +295,11 @@ ul {
       -webkit-box-ordinal-group: 0;
           -ms-flex-order: -1;
               order: -1; } }
+  @media (max-width: 767px) {
+    .header__burger-btn {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
   .header__burger-btn:focus, .header__burger-btn:hover {
     opacity: 0.5; }
   .header__burger-btn:active {
@@ -300,9 +310,6 @@ ul {
   font-size: 18px;
   line-height: 23px;
   color: #ffffff; }
-  @media (max-width: 1023px) {
-    .header__login {
-      display: block; } }
 
 @media (max-width: 1023px) {
   .header--js,
@@ -322,12 +329,9 @@ ul {
       -webkit-box-flex: 0;
           -ms-flex-positive: 0;
               flex-grow: 0; }
-    .header--js .header__burger-btn,
-    .header--nojs .header__burger-btn {
-      margin-left: -10px; }
-      .header--js .header__burger-btn svg,
-      .header--nojs .header__burger-btn svg {
-        color: #ffffff; }
+    .header--js .header__burger-btn svg,
+    .header--nojs .header__burger-btn svg {
+      color: #ffffff; }
     .header--js .header__logo svg,
     .header--nojs .header__logo svg {
       color: #ffffff; }
@@ -350,7 +354,10 @@ ul {
     .header--nojs .sub-list {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex; }
+    .header--js .header__login,
+    .header--nojs .header__login {
+      display: block; } }
 
 @media (max-width: 767px) {
   .header--js,
@@ -674,10 +681,10 @@ ul {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       padding-top: 50px;
-      padding: 60px 150px 60px 45px; } }
+      padding: 48px 163px 54px 45px; } }
   @media (max-width: 767px) {
     .footer__container {
-      padding: 60px 15px; } }
+      padding: 50px 15px; } }
 
 .footer__sign-up {
   outline: 1px solid white;
@@ -707,10 +714,12 @@ ul {
       width: 100%;
       max-width: unset;
       margin-right: 0;
-      margin-bottom: 49px; }
+      margin-bottom: 44px; }
       .footer__sign-up h2 {
         margin-right: 50px;
-        margin-bottom: 12px; } }
+        margin-bottom: 12px; }
+      .footer__sign-up p {
+        margin-right: 36px; } }
   @media (max-width: 767px) {
     .footer__sign-up {
       margin-bottom: 47px; }
@@ -746,7 +755,7 @@ ul {
     .footer__socials {
       margin-top: 0;
       margin-right: -12px;
-      margin-left: 10px; } }
+      margin-left: 0; } }
   @media (max-width: 767px) {
     .footer__socials {
       width: 100%;
@@ -801,7 +810,7 @@ ul {
   border-bottom: 1px solid #ffffff; }
   .form-footer__container input {
     width: 100%;
-    padding: 5px 0;
+    padding: 5px 10px 5px 0;
     padding-right: 10px;
     font-weight: 500;
     font-size: 14px;
@@ -823,6 +832,14 @@ ul {
       color: #1d1613;
       background-color: #ffffff;
       outline: none; }
+  @media (max-width: 1023px) {
+    .form-footer__container input {
+      width: 77%;
+      margin-right: 29px;
+      padding: 5px 10px 5px 0; } }
+  @media (max-width: 767px) {
+    .form-footer__container input {
+      width: 66%; } }
 
 .form-footer__button {
   display: -webkit-box;
@@ -860,15 +877,18 @@ ul {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      margin: 0 -15px; } }
+          flex-wrap: wrap; } }
 
 .footer-social__item:not(:last-child) {
   margin-bottom: 24px; }
 
+@media (max-width: 1023px) {
+  .footer-social__item:not(:last-child) {
+    margin-bottom: 22px; } }
+
 @media (max-width: 767px) {
   .footer-social__item {
-    margin: 0 16px 15px; } }
+    margin: 0 36px 15px 0; } }
 
 .footer-social__link {
   display: -webkit-box;
@@ -883,7 +903,10 @@ ul {
     padding-left: 10px; }
   @media (max-width: 767px) {
     .footer-social__link p {
-      display: none; } }
+      display: none; }
+    .footer-social__link svg {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5); } }
 
 .modal-login {
   display: none; }

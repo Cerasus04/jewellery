@@ -27,6 +27,12 @@
       content: none;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    min-height: 92px;
+    padding: 38px 15px 50px;
+    margin-bottom: 0;
+  }
 }
 
 .header__top {
@@ -169,6 +175,10 @@
     order: -1;
   }
 
+  @media (max-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+
   &:focus,
   &:hover {
     opacity: 0.5;
@@ -184,10 +194,6 @@
   font-size: 18px;
   line-height: 23px;
   color: $basic-white;
-
-  @media (max-width: $desktop-width) {
-    display: block;
-  }
 }
 
 .header--js,
@@ -204,7 +210,7 @@
     }
 
     & .header__burger-btn {
-      margin-left: -10px;
+      // margin-left: -10px;
       & svg {
         color: $basic-white;
       }
@@ -235,6 +241,10 @@
 
     & .sub-list {
       display: flex;
+    }
+
+    & .header__login {
+      display: block;
     }
   }
 
