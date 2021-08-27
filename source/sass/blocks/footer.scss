@@ -13,13 +13,14 @@
   padding: 98px 0;
 
   @media (max-width: $desktop-width) {
+    width: 100%;
     flex-wrap: wrap;
     padding-top: 50px;
-    padding-right: 163px;
+    padding: 60px 150px 60px 45px;
   }
 
   @media (max-width: $tablet-width) {
-    padding: 50px 15px 60px;
+    padding: 60px 15px;
   }
 }
 

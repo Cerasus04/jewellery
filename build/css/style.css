@@ -120,6 +120,8 @@ ul {
   word-wrap: normal;
   color: #1d1613;
   background-color: #ffffff; }
+  .page--js {
+    overflow: hidden; }
 
 .header {
   position: relative;
@@ -157,6 +159,12 @@ ul {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
+  @media (max-width: 1023px) {
+    .header__top {
+      padding-bottom: 25px; } }
+  @media (max-width: 767px) {
+    .header__top {
+      padding-bottom: 10px; } }
 
 .header__logo {
   outline: 1px solid blue;
@@ -164,6 +172,12 @@ ul {
   @media (max-width: 1023px) {
     .header__logo {
       margin: -22px auto 9px; } }
+  @media (max-width: 767px) {
+    .header__logo {
+      margin-top: -19px; }
+      .header__logo svg {
+        width: 52px;
+        height: 52px; } }
 
 .header__search {
   position: relative;
@@ -210,6 +224,9 @@ ul {
         left: 16px; }
         .header__search label svg {
           color: #ffffff; } }
+  @media (max-width: 767px) {
+    .header__search {
+      margin-bottom: 35px; } }
 
 .header__nav {
   outline: 1px solid blue;
@@ -227,7 +244,19 @@ ul {
       left: unset;
       -webkit-transform: unset;
               transform: unset;
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 23px; } }
+  @media (max-width: 767px) {
+    .header__nav {
+      margin-bottom: 15px; } }
+
+@media (max-width: 1023px) {
+  .header__nav-list {
+    margin-bottom: 20px; } }
+
+@media (max-width: 767px) {
+  .header__nav-list {
+    margin-bottom: 10px; } }
 
 .header__user-menu {
   outline: 1px solid blue;
@@ -235,6 +264,9 @@ ul {
   @media (max-width: 1023px) {
     .header__user-menu {
       width: 5.5%; } }
+  @media (max-width: 767px) {
+    .header__user-menu {
+      width: 15%; } }
 
 .header__burger-btn {
   display: none; }
@@ -263,9 +295,18 @@ ul {
   .header__burger-btn:active {
     opacity: 0.7; }
 
+.header__login {
+  display: none;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff; }
+  @media (max-width: 1023px) {
+    .header__login {
+      display: block; } }
+
 @media (max-width: 1023px) {
-  .header--js {
-    position: relative;
+  .header--js,
+  .header--nojs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -273,41 +314,66 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 778px;
-    padding: 53px 43px 77px 42px;
+    padding: 53px 43px 77px 44px;
     margin-bottom: 0;
     background-color: #a87b62; }
-    .header--js .header__top {
+    .header--js .header__top,
+    .header--nojs .header__top {
       -webkit-box-flex: 0;
           -ms-flex-positive: 0;
-              flex-grow: 0;
-      padding-bottom: 25px; }
-    .header--js .header__burger-btn {
+              flex-grow: 0; }
+    .header--js .header__burger-btn,
+    .header--nojs .header__burger-btn {
       margin-left: -10px; }
-      .header--js .header__burger-btn svg {
+      .header--js .header__burger-btn svg,
+      .header--nojs .header__burger-btn svg {
         color: #ffffff; }
-    .header--js .header__logo svg {
+    .header--js .header__logo svg,
+    .header--nojs .header__logo svg {
       color: #ffffff; }
-    .header--js .header__search {
+    .header--js .header__search,
+    .header--nojs .header__search {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .header--js .header__search input {
+      .header--js .header__search input,
+      .header--nojs .header__search input {
         color: #ffffff; }
-    .header--js .header__nav {
+    .header--js .header__nav,
+    .header--nojs .header__nav {
       display: block; }
-    .header--js .user-menu__icon {
+    .header--js .user-menu__icon,
+    .header--nojs .user-menu__icon {
       color: #ffffff;
       fill: transparent; }
-    .header--js .sub-list {
+    .header--js .sub-list,
+    .header--nojs .sub-list {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
-    .header--js .user-menu__modal-login {
-      display: block;
-      color: #ffffff;
-      left: 48px;
-      bottom: 75px; } }
+      display: flex; } }
+
+@media (max-width: 767px) {
+  .header--js,
+  .header--nojs {
+    padding: 38px 15px 50px; } }
+
+@media (max-width: 1023px) {
+  .header--nojs {
+    position: relative;
+    min-height: 778px; } }
+
+@media (max-width: 767px) {
+  .header--nojs {
+    min-height: 684px; } }
+
+.header--js {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  overflow: auto; }
 
 .nav-list {
   display: -webkit-box;
@@ -323,8 +389,7 @@ ul {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column;
-      margin-bottom: 20px; } }
+              flex-direction: column; } }
 
 .nav-list__item {
   padding-right: 10px; }
@@ -341,7 +406,7 @@ ul {
   font-family: "Poppins", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
-  color: #ffffff; }
+  color: rgba(255, 255, 255, 0.75); }
   @media (max-width: 1023px) {
     .sub-list {
       -webkit-box-orient: vertical;
@@ -365,10 +430,7 @@ ul {
 
 @media (max-width: 1023px) {
   .user-menu__modal-login {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    left: 40px; } }
+    display: none; } }
 
 .user-menu__cart {
   padding-left: 31px; }
@@ -392,6 +454,20 @@ ul {
   max-width: 1366px;
   margin: 0 auto;
   padding: 130px 98px 0; }
+  @media (max-width: 1023px) {
+    .main__new-items,
+    .main__blog,
+    .main__faq,
+    .main__gallery,
+    .main__catalog {
+      padding: 130px 45px 0; } }
+  @media (max-width: 767px) {
+    .main__new-items,
+    .main__blog,
+    .main__faq,
+    .main__gallery,
+    .main__catalog {
+      padding: 130px 15px 0; } }
 
 .main__gallery {
   padding-top: 108px; }
@@ -594,13 +670,14 @@ ul {
   padding: 98px 0; }
   @media (max-width: 1023px) {
     .footer__container {
+      width: 100%;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       padding-top: 50px;
-      padding-right: 163px; } }
+      padding: 60px 150px 60px 45px; } }
   @media (max-width: 767px) {
     .footer__container {
-      padding: 50px 15px 60px; } }
+      padding: 60px 15px; } }
 
 .footer__sign-up {
   outline: 1px solid white;

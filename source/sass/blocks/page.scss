@@ -15,6 +15,10 @@
   word-wrap: normal;
   color: $text-black;
   background-color: $basic-white;
+
+  &--js {
+    overflow: hidden;
+  }
 }
 
 .page__header {

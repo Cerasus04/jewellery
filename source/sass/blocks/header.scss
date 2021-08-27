@@ -32,6 +32,14 @@
 .header__top {
   display: flex;
   flex-grow: 1;
+
+  @media (max-width: $desktop-width) {
+    padding-bottom: 25px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
 }
 .header__logo {
   outline: 1px solid blue;
@@ -39,6 +47,14 @@
 
   @media (max-width: $desktop-width) {
     margin: -22px auto 9px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: -19px;
+    & svg {
+      width: 52px;
+      height: 52px;
+    }
   }
 }
 .header__search {
@@ -86,7 +102,10 @@
         color: $basic-white;
       }
     }
+  }
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 35px;
   }
 }
 .header__nav {
@@ -104,9 +123,22 @@
     left: unset;
     transform: unset;
     width: 100%;
+    margin-bottom: 23px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 15px;
   }
 }
 .header__nav-list {
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
 }
 .header__sub-nav {
 }
@@ -116,6 +148,9 @@
 
   @media (max-width: $desktop-width) {
     width: 5.5%;
+  }
+  @media (max-width: $tablet-width) {
+    width: 15%;
   }
 }
 .header__burger-btn {
@@ -144,19 +179,28 @@
   }
 }
 
-.header--js {
+.header__login {
+  display: none;
+  font-size: 18px;
+  line-height: 23px;
+  color: $basic-white;
+
   @media (max-width: $desktop-width) {
-    position: relative;
+    display: block;
+  }
+}
+
+.header--js,
+.header--nojs {
+  @media (max-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    min-height: 778px;
-    padding: 53px 43px 77px 42px;
+    padding: 53px 43px 77px 44px;
     margin-bottom: 0;
     background-color: $basic-brown;
 
     & .header__top {
       flex-grow: 0;
-      padding-bottom: 25px;
     }
 
     & .header__burger-btn {
@@ -192,12 +236,30 @@
     & .sub-list {
       display: flex;
     }
-
-    & .user-menu__modal-login {
-      display: block;
-      color: $basic-white;
-      left: 48px;
-      bottom: 75px;
-    }
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 38px 15px 50px;
+  }
+}
+
+.header--nojs {
+  @media (max-width: $desktop-width) {
+    position: relative;
+    min-height: 778px;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-height: 684px;
+  }
+}
+
+.header--js {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  overflow: auto;
 }

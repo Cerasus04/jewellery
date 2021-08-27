@@ -7,9 +7,6 @@
 .user-menu__modal-login {
   @media (max-width: $desktop-width) {
     display: none;
-    position: absolute;
-    bottom: 0;
-    left: 40px;
   }
 }
 
