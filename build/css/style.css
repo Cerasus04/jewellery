@@ -614,6 +614,157 @@ ul {
 .new-items__link {
   margin: 35px 50px 28px; }
 
+.new-items__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%; }
+
+.product-card {
+  display: grid;
+  grid-template-rows: 284px auto; }
+
+.product-card__image {
+  position: relative;
+  grid-row: 1 / 2; }
+
+.product-card__description {
+  grid-row: 2 / 3;
+  width: 100%;
+  padding: 22px 0 23px;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .product-card__description {
+      padding-top: 15px;
+      padding-right: 0;
+      padding-left: 0; } }
+  .product-card__description p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px; }
+  .product-card__description p:last-child {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px; }
+
+.product-card__image picture,
+.product-card__image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.slider {
+  position: relative; }
+
+.slider__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.slider__item {
+  width: 25%;
+  margin-right: 30px; }
+
+.slider__item:last-child {
+  margin-right: 0; }
+
+.slider__button-container {
+  position: absolute;
+  top: -25%;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.slider__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+  .slider__button:focus, .slider__button:hover {
+    outline: 2px solid #1d1613;
+    opacity: 0.5; }
+  .slider__button:active {
+    opacity: 0.7; }
+  @media (max-width: 1023px) {
+    .slider__button {
+      -webkit-transform: scale(1.3);
+              transform: scale(1.3); } }
+  @media (max-width: 767px) {
+    .slider__button {
+      display: none; } }
+
+.slider__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (max-width: 767px) {
+    .slider__nav {
+      display: none; } }
+
+.slider__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #9b9997;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+  .slider__number:focus, .slider__number:hover {
+    opacity: 0.5; }
+  .slider__number:active {
+    opacity: 0.7; }
+  @media (max-width: 1023px) {
+    .slider__number {
+      margin: 0 1px; } }
+
+:nth-child(6n + 3) ~ .slider__number {
+  display: none; }
+  @media (max-width: 767px) {
+    :nth-child(6n + 3) ~ .slider__number {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.slider__info {
+  display: none; }
+  @media (max-width: 767px) {
+    .slider__info {
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 2px; } }
+
 .blog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -816,8 +967,8 @@ ul {
   @media (max-width: 767px) {
     .gallery__list {
       grid-gap: 15px;
-      grid-template-columns: 44.8% auto;
-      grid-template-rows: 35% 24% 32%; } }
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr); } }
 
 .gallery__item--big {
   grid-column: 2 / 4;
@@ -840,11 +991,7 @@ ul {
      object-position: center center; }
 
 @media (max-width: 767px) {
-  .gallery__item:nth-child(7n + 3) {
-    display: none; } }
-
-@media (max-width: 767px) {
-  .gallery__item:nth-child(7n + 4) {
+  .gallery__item--hidden {
     display: none; } }
 
 .footer {

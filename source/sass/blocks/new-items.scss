@@ -11,5 +11,9 @@
 .new-items__link {
   margin: 35px 50px 28px;
 }
+
 .new-items__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

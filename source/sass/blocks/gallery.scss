@@ -21,8 +21,10 @@
 
   @media (max-width: $tablet-width) {
     grid-gap: 15px;
-    grid-template-columns: 44.8% auto;
-    grid-template-rows: 35% 24% 32%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    // grid-template-columns: 44.8% auto;
+    // grid-template-rows: 35% 24% 32%;
   }
 }
 .gallery__item--big {
@@ -47,13 +49,7 @@
   object-position: center center;
 }
 
-.gallery__item:nth-child(7n + 3) {
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.gallery__item:nth-child(7n + 4) {
+.gallery__item--hidden {
   @media (max-width: $tablet-width) {
     display: none;
   }
