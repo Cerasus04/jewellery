@@ -1,15 +1,15 @@
 .product-card {
-  // display: grid;
-  // grid-template-rows: 284px auto;
+  display: grid;
+  grid-template-rows: 284px auto;
 }
 
 .product-card__image {
   position: relative;
-  width: 100%;
+  grid-row: 1 / 2;
 }
 
 .product-card__description {
-  // grid-row: 2 / 3;
+  grid-row: 2 / 3;
 
   width: 100%;
   padding: 22px 0 23px;

@@ -17,7 +17,8 @@ const include = require('posthtml-include');
 const del = require('del');
 const path = require('path');
 const ghPages = require('gh-pages');
-const concat = require('gulp-concat');
+const gulpWebpack = require(`webpack-stream`);
+const webpack = require(`webpack`);
 
 gulp.task(`css`, function () {
   return gulp.src(`source/sass/style.scss`)
@@ -86,9 +87,10 @@ gulp.task('html', function () {
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('scripts', function() {
-  return gulp.src('source/js/*.js')
-    .pipe(concat('main.js'))
+gulp.task('scripts', function () {
+  return gulp
+    .src('source/js/menu.js')
+    .pipe(gulpWebpack(require("./webpack.config"), webpack))
     .pipe(gulp.dest('build/js'));
 });
 
@@ -111,5 +113,10 @@ gulp.task('deploy', function (cb) {
   ghPages.publish(path.join(process.cwd(), './build'), cb);
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'scripts', 'css', 'sprite', 'webp', 'html'));
+gulp.task('publish', function (cb) {
+  ghPages.publish('./build', cb);
+});
+
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'webp', 'html'));
 gulp.task('start', gulp.series('build', 'server'));
+gulp.task('deploy', gulp.series('build', 'publish'));

@@ -3,15 +3,13 @@
 }
 
 .slider__list {
-  // display: flex;
-  // justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .slider__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  width: 25%;
+  margin-right: 30px;
 }
 
 .slider__item:last-child {

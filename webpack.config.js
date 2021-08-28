@@ -1,18 +1,20 @@
 const path = require("path");
 
 module.exports = {
-  mode: `development`,
+  mode: 'development',
   entry: [
-
+    './source/js/menu.js',
+    './source/js/slider.js',
+    './source/js/accordion.js',
   ],
   output: {
-    filename: `main.js`,
-    path: path.resolve(__dirname, `build/js`),
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'build/js'),
     iife: false,
   },
   watch: true,
 
-  devtool: `source-map`,
+  devtool: 'source-map',
 
   module: {}
 };

@@ -18,6 +18,10 @@
   }
 
   @media (max-width: $desktop-width) {
+    width: 18px;
+    height: 16px;
+    padding: 0;
+
     & p {
       display: none;
     }
