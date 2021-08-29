@@ -1,3 +1,4 @@
+@import '../../node_modules/swiper/swiper';
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/mixin.scss";
@@ -10,13 +11,7 @@
 @import "blocks/user-menu.scss";
 @import "blocks/main.scss";
 @import "blocks/promo.scss";
-@import "blocks/new-items.scss";
-@import "blocks/swiper/swiper-vars.scss";
-@import "blocks/swiper/swiper.scss";
-@import "blocks/swiper/pagination.scss";
-@import "blocks/swiper/navigation.scss";
-@import "blocks/product-card.scss";
-@import "blocks/slider.scss";
+@import "blocks/new-in.scss";
 @import "blocks/blog.scss";
 @import "blocks/post.scss";
 @import "blocks/faq.scss";
