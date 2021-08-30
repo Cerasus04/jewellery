@@ -2,6 +2,18 @@
 .new-in {
   position: relative;
   margin-bottom: 117px;
+  max-width: 1366px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 121px 96px 0;
+
+  @media (max-width: $desktop-width) {
+    padding: 70px 45px 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 61px 15px 0;
+  }
 }
 
 
@@ -10,14 +22,36 @@
 
   & h2 {
     @include title;
-    margin: 0 50px 28px;
+    margin: 0 50px 23px;
   }
+
+  @media (max-width: $desktop-width) {
+
+    & h2 {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.new-in__link {
+  padding: 0;
+  z-index: 10;
 }
 
 .new-in__slider {
   width: 100%;
   min-height: 505px;
+  margin-top: -50px;
   overflow: hidden;
+
+  @media (max-width: $desktop-width) {
+    margin-top: -44px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 42px;
+    min-height: 290px;
+  }
 }
 
 // Контролс
@@ -27,7 +61,17 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 90px;
+  padding-right: 10px;
   z-index: 10;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 78px;
+    padding-right: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .new-in__slider-btn {
@@ -52,7 +96,20 @@
 // Пагинация
 .new-in__slider-pagination {
   width: 100%;
+  margin-top: 28px;
   text-align: center;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 17px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 11px;
+
+    & span {
+      padding:  0 5px;
+    }
+  }
 }
 
 .new-in__slider-pagination .swiper-pagination-bullet {

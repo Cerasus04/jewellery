@@ -13,71 +13,73 @@
 </head>
 <body class="page">
   <header class="page__header header header--nojs">
-    <div class="header__top">
-      <button class="header__burger-btn" aria-label="Menu">
-        <svg width="25" height="18">
-          <use href="img/sprite.svg#icon-burger"></use>
-        </svg>
-      </button>
-      <div class="header__logo">
-        <a aria-label="Logo Jewellery" id="top">
-          <svg width="66" height="66">
-            <use href="img/sprite.svg#icon-logo"></use>
+    <div class="header__container header__container--nojs">
+      <div class="header__top">
+        <button class="header__burger-btn" aria-label="Menu">
+          <svg width="25" height="18">
+            <use href="img/sprite.svg#icon-burger"></use>
           </svg>
-        </a>
+        </button>
+        <div class="header__logo">
+          <a aria-label="Logo Jewellery" id="top">
+            <svg width="66" height="66">
+              <use href="img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__user-menu user-menu">
+          <a class="user-menu__modal-login" href="modal-login.html" aria-label="Enter modal-login">Login
+          </a>
+          <a class="user-menu__cart" href="#">
+            <svg class="user-menu__icon" width="20" height="18">
+              <use href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            <p>Cart <span>0</span></p>
+          </a>
+        </div>
       </div>
-      <div class="header__user-menu user-menu">
-        <a class="user-menu__modal-login" href="modal-login.html" aria-label="Enter modal-login">Login
-        </a>
-        <a class="user-menu__cart" href="#">
-          <svg class="user-menu__icon" width="20" height="18">
-            <use href="img/sprite.svg#icon-cart"></use>
+      <form action="https://echo.htmlacademy.ru" class="header__search" method="POST">
+        <label for="search">
+          <svg width="14" height="14">
+            <use href="img/sprite.svg#icon-search"></use>
           </svg>
-          <p>Cart <span>0</span></p>
-        </a>
-      </div>
+          <span class="visually-hidden">Site search</span>
+        </label>
+        <input type="search" id="search" name="search" placeholder="Type here to search">
+      </form>
+      <nav class="header__nav" id="menu">
+        <ul class="header__nav-list nav-list">
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">What’s new</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="catalog.html" class="nav-list__link">Chokers</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Necklaces</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Rings</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Earrings</a>
+          </li>
+        </ul>
+        <ul class="header__sub-nav sub-list">
+          <li class="sub-list__item">
+            <a href="#" class="sub-list__link">About CH</a>
+          </li>
+          <li class="sub-list__item">
+            <a href="#" class="sub-list__link">Stores & Hours</a>
+          </li>
+          <li class="sub-list__item">
+            <a href="#" class="sub-list__link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__login" href="modal-login.html" aria-label="Enter modal-login">Login
+      </a>
     </div>
-    <form action="https://echo.htmlacademy.ru" class="header__search" method="POST">
-      <label for="search">
-        <svg width="14" height="14">
-          <use href="img/sprite.svg#icon-search"></use>
-        </svg>
-        <span class="visually-hidden">Site search</span>
-      </label>
-      <input type="search" id="search" name="search" placeholder="Type here to search">
-    </form>
-    <nav class="header__nav" id="menu">
-      <ul class="header__nav-list nav-list">
-        <li class="nav-list__item">
-          <a href="#" class="nav-list__link">What’s new</a>
-        </li>
-        <li class="nav-list__item">
-          <a href="catalog.html" class="nav-list__link">Chokers</a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#" class="nav-list__link">Necklaces</a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#" class="nav-list__link">Rings</a>
-        </li>
-        <li class="nav-list__item">
-          <a href="#" class="nav-list__link">Earrings</a>
-        </li>
-      </ul>
-      <ul class="header__sub-nav sub-list">
-        <li class="sub-list__item">
-          <a href="#" class="sub-list__link">About CH</a>
-        </li>
-        <li class="sub-list__item">
-          <a href="#" class="sub-list__link">Stores & Hours</a>
-        </li>
-        <li class="sub-list__item">
-          <a href="#" class="sub-list__link">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
-    <a class="header__login" href="modal-login.html" aria-label="Enter modal-login">Login
-    </a>
   </header>
   <main class="page__main main">
     <h1 class="visually-hidden">Jewellery shop</h1>
@@ -87,7 +89,7 @@
     <section class="main__new-in new-in">
       <div class="new-in__title">
         <h2>New in</h2>
-        <a href="#" class="new-in__link section-link">Shop now</a>
+        <a href="#" class="new-in__link section-link">Shop Now</a>
       </div>
       <div class="new-in__slider swiper-container">
         <div class="new-in__slider-controls">
@@ -302,7 +304,7 @@
           </div>
 
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="new-in__slider-pagination swiper-pagination"></div>
       </div>
     </section>
     <section class="main__blog blog">
@@ -314,11 +316,12 @@
             <div class="post__content">
               <time datetime="2019-09-30">September 30, 2019</time>
               <h3>How to care for your jewellery</h3>
-              <a class="section-link" href="#">Read article</a>
+              <a class="section-link" href="#">Read Article</a>
             </div>
             <div class="post__img">
               <picture>
                 <!-- webp -->
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog-care-tb.webp 1x, img/blog-care-tb@2x.webp 2x">
                 <source type="image/webp" srcset="img/blog-care.webp 1x, img/blog-care@2x.webp 2x">
                 <!-- 1x: 285px ; 2x: 570px -->
                 <img src="img/blog-care.jpg" srcset="img/blog-care@2x.jpg 2x" alt="How to care for your jewellery" width="285" height="300">
@@ -331,11 +334,12 @@
             <div class="post__content">
               <time datetime="2019-09-23">September 23, 2019</time>
               <h3>Power of crystals</h3>
-              <a class="section-link" href="#">Read article</a>
+              <a class="section-link" href="#">Read Article</a>
             </div>
             <div class="post__img post__img--second">
               <picture>
                 <!-- webp -->
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog-crystals-tb.webp 1x, img/blog-crystals-tb@2x.webp 2x">
                 <source type="image/webp" srcset="img/blog-crystals.webp 1x, img/blog-crystals@2x.webp 2x">
                 <!-- 1x: 285px ; 2x: 570px -->
                 <img src="img/blog-crystals.jpg" srcset="img/blog-crystals@2x.jpg 2x" alt="Power of crystals" width="285" height="300">
@@ -348,11 +352,12 @@
             <div class="post__content">
               <time datetime="2019-09-16">September 16, 2019</time>
               <h3>AW 19 trends</h3>
-              <a class="section-link" href="#">Read article</a>
+              <a class="section-link" href="#">Read Article</a>
             </div>
             <div class="post__img">
               <picture>
                 <!-- webp -->
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/blog-trends-tb.webp 1x, img/blog-trends-tb@2x.webp 2x">
                 <source type="image/webp" srcset="img/blog-trends.webp 1x, img/blog-trends@2x.webp 2x">
                 <!-- 1x: 285px ; 2x: 570px -->
                 <img src="img/blog-trends.jpg" srcset="img/blog-trends@2x.jpg 2x" alt="AW 19 trends" width="285" height="300">
@@ -362,133 +367,7 @@
         </li>
       </ul>
     </section>
-    <section class="main__faq faq">
-      <h2>Frequently asked questions</h2>
-      <ul class="faq__list">
-        <li class="faq__item">
-          <h3>What materials are the jewellery made of?</h3>
-          <p>
-            Our jewellerry is made of solid gold, silver or leather. Also,
-            some jewellery contains precious and semiprecious stones and
-            crystals.
-          </p>
-          <button class="faq__button" type="button">
-            <span class="visually-hidden">Open / Close faq section</span>
-            <svg width="17" height="10">
-              <use class="faq__icon faq__icon--open" href="img/sprite.svg#icon-arrow-down"></use>
-              <use class="faq__icon faq__icon--close" href="img/sprite.svg#icon-arrow-up"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="faq__item">
-          <h3>Which countries do you deliver to?</h3>
-          <p>
-            Our jewellerry is made of solid gold, silver or leather. Also,
-            some jewellery contains precious and semiprecious stones and
-            crystals.
-          </p>
-          <button class="faq__button" type="button">
-            <span class="visually-hidden">Open / Close faq section</span>
-            <svg width="17" height="10">
-              <use class="faq__icon faq__icon--open" href="img/sprite.svg#icon-arrow-down"></use>
-              <use class="faq__icon faq__icon--close" href="img/sprite.svg#icon-arrow-up"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="faq__item">
-          <h3>What are the payment methods?</h3>
-          <p>
-            Our jewellerry is made of solid gold, silver or leather. Also,
-            some jewellery contains precious and semiprecious stones and
-            crystals.
-          </p>
-          <button class="faq__button" type="button">
-            <span class="visually-hidden">Open / Close faq section</span>
-            <svg width="17" height="10">
-              <use class="faq__icon faq__icon--open" href="img/sprite.svg#icon-arrow-down"></use>
-              <use class="faq__icon faq__icon--close" href="img/sprite.svg#icon-arrow-up"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="faq__item">
-          <h3>Can I return the jewellery&nbsp;if it didn’t fit me?</h3>
-          <p>
-            Our jewellerry is made of solid gold, silver or leather. Also,
-            some jewellery contains precious and semiprecious stones and
-            crystals.
-          </p>
-          <button class="faq__button" type="button">
-            <span class="visually-hidden">Open / Close faq section</span>
-            <svg width="17" height="10">
-              <use class="faq__icon faq__icon--open" href="img/sprite.svg#icon-arrow-down"></use>
-              <use class="faq__icon faq__icon--close" href="img/sprite.svg#icon-arrow-up"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </section>
-    <section class="main__gallery gallery">
-      <h2>@Chjewellery</h2>
-      <a href="#" class="gallery__link section-link">Follow us</a>
-      <ul class="gallery__list">
-        <li class="gallery__item">
-          <picture>
-            <!-- webp -->
-            <source type="image/webp" srcset="img/gallery-8.webp 1x, img/gallery-8@2x.webp 2x">
-            <!-- 1x: 230px ; 2x: 460px -->
-            <img src="img/gallery-8.jpg" srcset="img/gallery-8@2x.jpg 2x" alt="Square earrings" width="230" height="230">
-          </picture>
-        </li>
-        <li class="gallery__item gallery__item--big">
-          <picture>
-            <!-- webp -->
-            <source type="image/webp" srcset="img/gallery-2.webp 1x, img/gallery-2@2x.webp 2x">
-            <!-- 1x: 400px ; 2x: 800px -->
-            <img src="img/gallery-2.jpg" srcset="img/gallery-2@2x.jpg 2x" alt="Big earrings" width="400" height="414">
-          </picture>
-        </li>
-        <li class="gallery__item gallery__item--hidden">
-          <picture>
-            <!-- webp -->
-            <source type="image/webp" srcset="img/gallery-4.webp 1x, img/gallery-4@2x.webp 2x">
-            <!-- 1x: 232px ; 2x: 464px -->
-            <img src="img/gallery-4.jpg" srcset="img/gallery-4@2x.jpg 2x" alt="Big bracelet" width="232" height="193">
-          </picture>
-        </li>
-        <li class="gallery__item gallery__item--hidden">
-          <picture>
-            <!-- webp -->
-            <source type="image/webp" srcset="img/gallery-6.webp 1x, img/gallery-6@2x.webp 2x">
-            <!-- 1x: 218px ; 2x: 436px -->
-            <img src="img/gallery-6.jpg" srcset="img/gallery-6@2x.jpg 2x" alt="Golden earrings" width="218" height="218">
-          </picture>
-        </li>
-        <li class="gallery__item">
-          <picture>
-            <!-- webp -->
-            <source type="image/webp" srcset="./img/gallery-1.webp 1x, ./img/gallery-1@2x.webp 2x">
-            <!-- 1x: 230px ; 2x: 460px -->
-            <img src="img/gallery-1.jpg" srcset="img/gallery-1@2x.jpg 2x" alt="Gemstone earrings" width="230" height="154">
-          </picture>
-        </li>
-        <li class="gallery__item">
-          <picture>
-            <!-- webp -->
-            <source type="image/webp" srcset="img/gallery-5.webp 1x, img/gallery-5@2x.webp 2x">
-            <!-- 1x: 218px ; 2x: 436px -->
-            <img src="img/gallery-5.jpg" srcset="img/gallery-5@2x.jpg 2x" alt="Jewellerry set" width="218" height="191">
-          </picture>
-        </li>
-        <li class="gallery__item">
-          <picture>
-            <!-- webp -->
-            <source type="image/webp" srcset="img/gallery-7.webp 1x, img/gallery-7@2x.webp 2x">
-            <!-- 1x: 232px ; 2x: 464px -->
-            <img src="img/gallery-7.jpg" srcset="img/gallery-7@2x.jpg 2x" alt="Jewellerry set" width="232" height="166">
-          </picture>
-        </li>
-      </ul>
-    </section>
+
   </main>
   <footer class="page__footer footer">
     <div class="footer__container">
@@ -579,7 +458,7 @@
     </div>
   </footer>
   <div class="overlay"></div>
-  <div class="modal-login" tabindex="0" id="login">
+  <!-- <div class="modal-login" tabindex="0" id="login">
     <h2>Log in</h2>
     <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="POST" id="login-form">
       <div class="modal-login__container">
@@ -609,7 +488,7 @@
         <use href="img/sprite.svg#icon-cross"></use>
       </svg>
     </button>
-  </div>
+  </div> -->
   <script src="js/main.js"></script>
 </body>
 </html>
