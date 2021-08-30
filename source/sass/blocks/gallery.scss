@@ -5,10 +5,11 @@
 
   & h2 {
     @include title;
+    letter-spacing: 0.03em;
   }
 }
 .gallery__link {
-  margin: 35px 50px 28px;
+  margin: 30px 50px 62px;
 }
 
 .gallery__list {

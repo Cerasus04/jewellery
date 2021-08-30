@@ -649,9 +649,14 @@ ul {
     .user-menu__icon {
       display: block; } }
 
-.main__blog {
+.main__blog,
+.main__faq,
+.main__gallery {
   max-width: 1366px;
   margin: 0 auto;
+  min-width: 320px; }
+
+.main__blog {
   padding: 116px 96px 0; }
   @media (max-width: 1023px) {
     .main__blog {
@@ -659,6 +664,24 @@ ul {
   @media (max-width: 767px) {
     .main__blog {
       padding: 34px 15px 0; } }
+
+.main__faq {
+  padding: 122px 96px 0; }
+  @media (max-width: 1023px) {
+    .main__faq {
+      padding: 68px 45px 0; } }
+  @media (max-width: 767px) {
+    .main__faq {
+      padding: 53px 15px 0; } }
+
+.main__gallery {
+  padding: 101px 96px 0; }
+  @media (max-width: 1023px) {
+    .main__gallery {
+      padding: 68px 45px 0; } }
+  @media (max-width: 767px) {
+    .main__gallery {
+      padding: 53px 15px 0; } }
 
 .promo {
   position: relative;
@@ -1100,16 +1123,10 @@ ul {
   color: #1d1613; }
 
 .faq {
-  margin-bottom: 50px;
-  padding-top: 20px;
+  width: 85%;
+  margin: 0 auto;
   text-align: center;
   background-color: #ffffff; }
-  @media (max-width: 1023px) {
-    .faq {
-      padding-top: 0; } }
-  @media (max-width: 767px) {
-    .faq {
-      padding: 18px 15px 0 15px; } }
   .faq h2 {
     margin: 0;
     font-family: "Cormorant Garamond", "Times", serif;
@@ -1118,20 +1135,27 @@ ul {
     line-height: 44px;
     letter-spacing: 0em;
     text-align: center;
+    margin-bottom: 50px;
     letter-spacing: 0.03em; }
+  @media (max-width: 1023px) {
+    .faq {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .faq h2 {
+      margin-bottom: 29px; } }
 
 .faq__list {
   border: 1px solid #a87b62; }
 
 .faq__item {
   position: relative;
-  padding: 40px 42px;
+  padding: 42px;
   text-align: left; }
   .faq__item:not(:first-child) {
     border-top: 1px solid #a87b62; }
   @media (max-width: 1023px) {
     .faq__item {
-      padding: 41px 50px; } }
+      padding: 42px 50px; } }
   @media (max-width: 767px) {
     .faq__item {
       padding: 18px 25px; } }
@@ -1271,10 +1295,11 @@ ul {
     font-weight: 700;
     line-height: 44px;
     letter-spacing: 0em;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 0.03em; }
 
 .gallery__link {
-  margin: 35px 50px 28px; }
+  margin: 30px 50px 62px; }
 
 .gallery__list {
   display: grid;

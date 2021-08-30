@@ -1,29 +1,12 @@
-// .main__new-in,
-// .main__blog,
-// .main__faq,
-// .main__gallery,
-// .main__catalog {
-//   max-width: 1366px;
-//   margin: 0 auto;
-//   padding: 130px 98px 0;
-
-//   @media (max-width: $desktop-width) {
-//     padding: 130px 45px 0;
-//   }
-
-//   @media (max-width: $tablet-width) {
-//     padding: 130px 15px 0;
-//   }
-// }
-
-// .main__gallery {
-//   padding-top: 108px;
-//   padding-bottom: 132px;
-// }
-
-.main__blog {
+.main__blog,
+.main__faq,
+.main__gallery {
   max-width: 1366px;
   margin: 0 auto;
+  min-width: $mobile-width;
+}
+
+.main__blog {
   padding: 116px 96px 0;
 
   @media (max-width: $desktop-width) {
@@ -35,4 +18,27 @@
   }
 }
 
+.main__faq {
+  padding: 122px 96px 0;
+
+  @media (max-width: $desktop-width) {
+    padding: 68px 45px 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 53px 15px 0;
+  }
+}
+
+.main__gallery {
+  padding: 101px 96px 0;
+
+  @media (max-width: $desktop-width) {
+    padding: 68px 45px 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 53px 15px 0;
+  }
+}
 

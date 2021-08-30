@@ -1,20 +1,23 @@
 .faq {
-  margin-bottom: 50px;
-  padding-top: 20px;
+  width: 85%;
+  margin: 0 auto;
   text-align: center;
   background-color: $basic-white;
 
+  & h2 {
+    @include title;
+    margin-bottom: 50px;
+    letter-spacing: 0.03em;
+  }
+
   @media (max-width: $desktop-width) {
-    padding-top: 0;
+    width: 100%;
   }
 
   @media (max-width: $tablet-width) {
-    padding: 18px 15px 0 15px;
-  }
-
-  & h2 {
-    @include title;
-    letter-spacing: 0.03em;
+    & h2 {
+      margin-bottom: 29px;
+    }
   }
 }
 
@@ -24,7 +27,7 @@
 
 .faq__item {
   position: relative;
-  padding: 40px 42px;
+  padding: 42px;
   text-align: left;
 
   &:not(:first-child) {
@@ -32,7 +35,7 @@
   }
 
   @media (max-width: $desktop-width){
-    padding: 41px 50px;
+    padding: 42px 50px;
   }
 
   @media (max-width: $tablet-width) {
