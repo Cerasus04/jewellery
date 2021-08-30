@@ -12442,7 +12442,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+swiper__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination]);
 
 (() => {
   new swiper__WEBPACK_IMPORTED_MODULE_0__.default('.new-in__slider', {

@@ -1,13 +1,215 @@
 .modal-login {
-  display: none;
+//   display: none;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 188px 45px 60px;
+
+  text-align: center;
+
+  background-color: $bg-beige;
+  box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 138px;
+
+    background-image: url("../img/bg-login.jpg");
+    background-position: center center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-login@2x.jpg");
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    max-width: 442px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: calc(100% - 50px);
+    padding-top: 120px;
+    padding-right: 15px;
+    padding-bottom: 45px;
+    padding-left: 15px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 84px;
+    }
+  }
+
+  & h2 {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    font-family: $cormorant;
+
+    @media (max-width: $desktop-width) {
+      margin-bottom: 16px;
+
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
 }
 .modal-login__form {
 }
 .modal-login__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .modal-login__field {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &:last-of-type {
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 18px;
+
+    &:last-of-type {
+      margin-bottom: 35px;
+    }
+  }
+
+  & input {
+    width: 100%;
+    padding: 10px 0;
+
+    font: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: &basic-black;
+
+    background-color: $bg-beige;
+    border: none;
+    border-bottom: 1px solid $basic-black;
+    border-radius: 0;
+
+    &::placeholder {
+      color: $placeholder-grey;
+    }
+
+    &:focus,
+    &:hover {
+      outline: 2px solid $basic-black;
+      // outline-offset: 3px;
+    }
+  }
+
+  & a {
+    align-self: flex-end;
+    margin-top: 4px;
+
+    font-size: 12px;
+    line-height: 18px;
+    color: $placeholder-grey;
+
+    &:focus,
+    &:hover {
+      color: $basic-black;
+    }
+
+    &:active {
+      color: $basic-black;
+
+      opacity: 0.7;
+    }
+  }
 }
+
 .modal-login__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 23px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: $basic-white;
+
+  background-color: $basic-brown;
+  border: 1px solid $basic-brown;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: $basic-white;
+
+    background-color: $basic-black;
+  }
 }
 .modal-login__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  @media (max-width: $desktop-width) {
+    top: 20px;
+    right: 19px;
+
+    transform: scale(1.5);
+  }
+
+  @media (max-width: $tablet-width) {
+    top: 10px;
+    right: 10px;
+
+    transform: unset;
+  }
 }

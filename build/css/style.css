@@ -787,43 +787,10 @@ ul {
     text-align: center;
     margin: 0 50px 28px; }
 
-.new-in--product-card {
-  margin-bottom: 126px; }
-
 .new-in__slider {
   width: 100%;
   min-height: 505px;
   overflow: hidden; }
-
-.new-in__card {
-  display: grid;
-  grid-template-rows: 284px auto auto;
-  max-width: 270px; }
-  .new-in__card h3 {
-    margin: 0;
-    margin-bottom: 8px;
-    font-family: "Poppins", "Arial", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-    color: #1d1613;
-    text-align: center; }
-  .new-in__card span {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    color: #1d1613;
-    text-align: center; }
-
-.new-in__card-image {
-  margin-bottom: 21px; }
-  .new-in__card-image img {
-    display: block;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover; }
 
 .new-in__slider-controls {
   position: relative;
@@ -869,50 +836,41 @@ ul {
 .new-in__slider-pagination .swiper-pagination-bullet-active {
   color: #1d1613; }
 
-@media (max-width: 1023px) {
-  .new-in {
-    margin-bottom: 66px; }
-  .new-in--product-card {
-    margin-bottom: 75px; }
-  .new-in__title {
-    margin-bottom: -97px; }
-    .new-in__title h2 {
-      margin-bottom: 21px; }
-  .new-in__link-all {
-    margin-bottom: 54px; }
-    .new-in__link-all::after {
-      bottom: -4px; }
-  .new-in__slider {
-    width: 678px;
-    height: 449px; }
-  .new-in__card {
-    width: 324px;
-    max-width: 100%; }
-  .new-in__slider-controls {
-    margin-bottom: 78px; }
-    .new-in__slider-controls svg {
-      width: 37px;
-      height: 15px; } }
+.product-card {
+  display: grid;
+  grid-template-rows: 284px auto;
+  grid-template-columns: 270px; }
 
-@media (max-width: 767px) {
-  .new-in {
-    margin-bottom: 55px; }
-  .new-in__title {
-    margin-bottom: 40px; }
-  .new-in--product-card {
-    margin-bottom: 66px; }
-  .new-in__link-all {
-    margin-bottom: 44px; }
-  .new-in__slider {
-    width: 100%;
-    height: auto;
-    margin-bottom: 22px; }
-  .new-in__card-image {
-    margin-bottom: 16px; }
-  .new-in__slider-controls {
-    display: none; }
-  .new-in__card {
-    width: 100%; } }
+.product-card__image {
+  grid-row: 1 / 2; }
+
+.product-card__description {
+  grid-row: 2 / 3;
+  width: 100%;
+  padding: 22px 0 23px;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .product-card__description {
+      padding-top: 15px;
+      padding-right: 0;
+      padding-left: 0; } }
+  .product-card__description p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px; }
+  .product-card__description p:last-child {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px; }
+
+.product-card__image picture,
+.product-card__image img {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .blog {
   display: -webkit-box;
@@ -1540,7 +1498,191 @@ ul {
               transform: scale(1.5); } }
 
 .modal-login {
-  display: none; }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 188px 45px 60px;
+  text-align: center;
+  background-color: #f0eae4;
+  -webkit-box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
+          box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24); }
+  .modal-login::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 138px;
+    background-image: url("../img/bg-login.jpg");
+    background-position: center center;
+    background-size: cover; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      .modal-login::before {
+        background-image: url("../img/bg-login@2x.jpg"); } }
+  @media (max-width: 1023px) {
+    .modal-login {
+      max-width: 442px;
+      padding-right: 50px;
+      padding-left: 50px; } }
+  @media (max-width: 767px) {
+    .modal-login {
+      width: calc(100% - 50px);
+      padding-top: 120px;
+      padding-right: 15px;
+      padding-bottom: 45px;
+      padding-left: 15px; }
+      .modal-login::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 84px; } }
+  .modal-login h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    font-family: "Cormorant Garamond", "Times", serif; }
+    @media (max-width: 1023px) {
+      .modal-login h2 {
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 31px; } }
+
+.modal-login__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%; }
+
+.modal-login__field {
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%; }
+  .modal-login__field:last-of-type {
+    margin-bottom: 45px; }
+  @media (max-width: 1023px) {
+    .modal-login__field {
+      margin-bottom: 18px; }
+      .modal-login__field:last-of-type {
+        margin-bottom: 35px; } }
+  .modal-login__field input {
+    width: 100%;
+    padding: 10px 0;
+    font: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: .modal-login__field input basic-black;
+    background-color: #f0eae4;
+    border: none;
+    border-bottom: 1px solid #1d1613;
+    border-radius: 0; }
+    .modal-login__field input::-webkit-input-placeholder {
+      color: #9b9997; }
+    .modal-login__field input::-moz-placeholder {
+      color: #9b9997; }
+    .modal-login__field input:-ms-input-placeholder {
+      color: #9b9997; }
+    .modal-login__field input::-ms-input-placeholder {
+      color: #9b9997; }
+    .modal-login__field input::placeholder {
+      color: #9b9997; }
+    .modal-login__field input:focus, .modal-login__field input:hover {
+      outline: 2px solid #1d1613; }
+  .modal-login__field a {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #9b9997; }
+    .modal-login__field a:focus, .modal-login__field a:hover {
+      color: #1d1613; }
+    .modal-login__field a:active {
+      color: #1d1613;
+      opacity: 0.7; }
+
+.modal-login__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 23px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #a87b62;
+  border: 1px solid #a87b62;
+  cursor: pointer; }
+  .modal-login__button:hover, .modal-login__button:focus {
+    opacity: 0.5; }
+  .modal-login__button:active {
+    color: #ffffff;
+    background-color: #1d1613; }
+
+.modal-login__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+  .modal-login__close:focus, .modal-login__close:hover {
+    opacity: 0.5; }
+  .modal-login__close:active {
+    opacity: 0.7; }
+  @media (max-width: 1023px) {
+    .modal-login__close {
+      top: 20px;
+      right: 19px;
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5); } }
+  @media (max-width: 767px) {
+    .modal-login__close {
+      top: 10px;
+      right: 10px;
+      -webkit-transform: unset;
+              transform: unset; } }
 
 .overlay {
   display: none; }

@@ -118,5 +118,5 @@ gulp.task('publish', function (cb) {
 });
 
 gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'webp', 'html'));
-gulp.task('start', gulp.series('build', 'server'));
+gulp.task('start', gulp.series('build', 'server', 'scripts'));
 gulp.task('deploy', gulp.series('build', 'publish'));
