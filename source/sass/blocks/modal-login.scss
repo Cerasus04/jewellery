@@ -1,8 +1,6 @@
 .modal-login {
-//   display: none;
+  display: none;
   position: relative;
-
-  display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 430px;
@@ -34,16 +32,12 @@
 
   @media (max-width: $desktop-width) {
     max-width: 442px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 197px 50px 40px;
   }
 
   @media (max-width: $tablet-width) {
     width: calc(100% - 50px);
-    padding-top: 120px;
-    padding-right: 15px;
-    padding-bottom: 45px;
-    padding-left: 15px;
+    padding: 120px 15px 25px;
 
     &::before {
       content: "";
@@ -66,19 +60,24 @@
     font-family: $cormorant;
 
     @media (max-width: $desktop-width) {
-      margin-bottom: 16px;
-
-      font-size: 24px;
+      margin-bottom: 28px;
       line-height: 31px;
     }
+
+    @media (max-width: $tablet-width) {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
   }
-}
-.modal-login__form {
 }
 .modal-login__container {
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  & p {
+    font-size: 14px;
+  }
 }
 .modal-login__field {
   margin-bottom: 24px;
@@ -90,11 +89,11 @@
     margin-bottom: 45px;
   }
 
-  @media (max-width: $desktop-width) {
-    margin-bottom: 18px;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 17px;
 
     &:last-of-type {
-      margin-bottom: 35px;
+      margin-bottom: 36px;
     }
   }
 
@@ -150,7 +149,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 15px;
   padding: 23px;
 
   font-weight: 500;
@@ -174,11 +172,10 @@
   }
 }
 .modal-login__close {
+  display: block;
   position: absolute;
   top: 15px;
   right: 15px;
-
-  display: none;
   justify-content: center;
   align-items: center;
   width: 24px;
@@ -211,5 +208,21 @@
     right: 10px;
 
     transform: unset;
+  }
+}
+.modal-login--active {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  &--active {
+    display: block;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
   }
 }
