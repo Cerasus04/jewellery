@@ -1,0 +1,10 @@
+.paginator {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paginator__list {
+  display: flex;
+  justify-content: space-between;
+  width: 96px;
+}

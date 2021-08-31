@@ -1,0 +1,26 @@
+.catalog__container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 80px 98px;
+  display: grid;
+  grid-area: "filter" "items";
+  grid-template-columns: 21% 1fr;
+  gap: 50px;
+}
+
+.catalog__products {
+  grid-area: "items";
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__filter {
+  grid-area: "filter";
+}
+
+.catalog__wrapper {
+  min-height: 456px;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}

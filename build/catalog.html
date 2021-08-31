@@ -89,9 +89,9 @@
     <section class="main__catalog catalog">
       <h2 class="visually-hidden">Jewellery shop assortment</h2>
       <div class="catalog__container">
-        <section class="catalog__filter">
+        <section class="catalog__filter catalog__filter--nojs">
           <h3 class="visually-hidden">Filter products</h3>
-          <div class="wrapper">
+          <div class="catalog__wrapper">
             <form class="catalog__filter filter" action="https://echo.htmlacademy.ru" method="GET">
               <div class="filter__inner">
                 <div class="filter__block accordion filter__block--product">
@@ -210,266 +210,225 @@
           <h3 class="visually-hidden">Products list</h3>
           <ul class="products">
             <li class="products__item">
-              <div class="product">
-                <div class="product__wrapper">
-                  <div class="product__image">
-                    <picture>
-                      <!-- webp -->
-                      <source type="image/webp" srcset="img/products/double-pearl-earrings.webp 1x, img/products/double-pearl-earrings@2x.webp 2x">
-                      <!-- 1x: 270px ; 2x: 540px -->
-                      <img src="img/products/double-pearl-earrings.jpg" srcset="img/products/double-pearl-earrings@2x.jpg 2x" alt="Double pearl earrings" width="270" height="272">
-                    </picture>
-                  </div>
-                  <div class="product__description">
-                    <p>Double pearl earrings</p>
-                    <p>$115</p>
-                  </div>
+              <div class="product-card">
+                <div class="product-card__image&quot;">
+                  <picture>
+                    <!-- webp -->
+                    <source type="image/webp" srcset="img/products/double-pearl-earrings.webp 1x, img/products/double-pearl-earrings@2x.webp 2x">
+                    <!-- 1x: 270px ; 2x: 540px -->
+                    <img src="img/products/double-pearl-earrings.jpg" srcset="img/products/double-pearl-earrings@2x.jpg 2x" alt="Double pearl earrings" width="270" height="272">
+                  </picture>
                 </div>
-                <a href="#" class="product__link"><span class="visually-hidden">Go to product page</span></a>
+                <div class="product-card__description">
+                  <p>Double pearl earrings</p>
+                  <p>$115</p>
+                </div>
               </div>
             </li>
             <li class="products__item">
-              <div class="product">
-                <div class="product__wrapper">
-                  <div class="product__image">
-                    <picture>
-                      <!-- webp -->
-                      <source type="image/webp" srcset="img/products/black-choker-gold-bead.webp 1x, img/products/black-choker-gold-bead@2x.webp 2x">
-                      <!-- 1x: 270px ; 2x: 540px -->
-                      <img src="img/products/black-choker-gold-bead.jpg" srcset="img/products/black-choker-gold-bead@2x.jpg 2x" alt="Choker with gold bead" width="270" height="272">
-                    </picture>
-                  </div>
-                  <div class="product__description">
-                    <p>Choker with gold bead</p>
-                    <p>$55</p>
-                  </div>
+              <div class="product-card">
+                <div class="product-card__image&quot;">
+                  <picture>
+                    <!-- webp -->
+                    <source type="image/webp" srcset="img/products/black-choker-gold-bead.webp 1x, img/products/black-choker-gold-bead@2x.webp 2x">
+                    <!-- 1x: 270px ; 2x: 540px -->
+                    <img src="img/products/black-choker-gold-bead.jpg" srcset="img/products/black-choker-gold-bead@2x.jpg 2x" alt="Choker with gold bead" width="270" height="272">
+                  </picture>
                 </div>
-                <a href="#" class="product__link"><span class="visually-hidden">Go to product page</span></a>
+                <div class="product-card__description">
+                  <p>Choker with gold bead</p>
+                  <p>$55</p>
+                </div>
               </div>
             </li>
             <li class="products__item">
-              <div class="product">
-                <div class="product__wrapper">
-                  <div class="product__image">
-                    <picture>
-                      <!-- webp -->
-                      <source type="image/webp" srcset="img/products/gold-layered-necklace.webp 1x, img/products/gold-layered-necklace@2x.webp 2x">
-                      <!-- 1x: 270px ; 2x: 540px -->
-                      <img src="img/products/gold-layered-necklace.jpg" srcset="img/products/gold-layered-necklace@2x.jpg 2x" alt="Gold layered necklace" width="270" height="272">
-                    </picture>
-                  </div>
-                  <div class="product__description">
-                    <p>Gold layered necklace</p>
-                    <p>$155</p>
-                  </div>
+              <div class="product-card">
+                <div class="product-card__image&quot;">
+                  <picture>
+                    <!-- webp -->
+                    <source type="image/webp" srcset="img/products/gold-layered-necklace.webp 1x, img/products/gold-layered-necklace@2x.webp 2x">
+                    <!-- 1x: 270px ; 2x: 540px -->
+                    <img src="img/products/gold-layered-necklace.jpg" srcset="img/products/gold-layered-necklace@2x.jpg 2x" alt="Gold layered necklace" width="270" height="272">
+                  </picture>
                 </div>
-                <a href="#" class="product__link"><span class="visually-hidden">Go to product page</span></a>
+                <div class="product-card__description">
+                  <p>Gold layered necklace</p>
+                  <p>$155</p>
+                </div>
               </div>
             </li>
             <li class="products__item">
-              <div class="product">
-                <div class="product__wrapper">
-                  <div class="product__image">
-                    <picture>
-                      <!-- webp -->
-                      <source type="image/webp" srcset="img/products/blue-gemstone-pendant.webp 1x, img/products/blue-gemstone-pendant@2x.webp 2x">
-                      <!-- 1x: 270px ; 2x: 540px -->
-                      <img src="img/products/blue-gemstone-pendant.jpg" srcset="img/products/blue-gemstone-pendant@2x.jpg 2x" alt="Blue gemstone pendant" width="270" height="272">
-                    </picture>
-                  </div>
-                  <div class="product__description">
-                    <p>Blue gemstone pendant</p>
-                    <p>$105</p>
-                  </div>
+              <div class="product-card">
+                <div class="product-card__image&quot;">
+                  <picture>
+                    <!-- webp -->
+                    <source type="image/webp" srcset="img/products/blue-gemstone-pendant.webp 1x, img/products/blue-gemstone-pendant@2x.webp 2x">
+                    <!-- 1x: 270px ; 2x: 540px -->
+                    <img src="img/products/blue-gemstone-pendant.jpg" srcset="img/products/blue-gemstone-pendant@2x.jpg 2x" alt="Blue gemstone pendant" width="270" height="272">
+                  </picture>
                 </div>
-                <a href="#" class="product__link"><span class="visually-hidden">Go to product page</span></a>
+                <div class="product-card__description">
+                  <p>Blue gemstone pendant</p>
+                  <p>$105</p>
+                </div>
               </div>
             </li>
             <li class="products__item">
-              <div class="product">
-                <div class="product__wrapper">
-                  <div class="product__image">
-                    <picture>
-                      <!-- webp -->
-                      <source type="image/webp" srcset="img/products/boho-earrings.webp 1x, img/products/boho-earrings@2x.webp 2x">
-                      <!-- 1x: 270px ; 2x: 540px -->
-                      <img src="img/products/boho-earrings.jpg" srcset="img/products/boho-earrings@2x.jpg 2x" alt="Boho earrings" width="270" height="272">
-                    </picture>
-                  </div>
-                  <div class="product__description">
-                    <p>Boho earrings</p>
-                    <p>$75</p>
-                  </div>
+              <div class="product-card">
+                <div class="product-card__image&quot;">
+                  <picture>
+                    <!-- webp -->
+                    <source type="image/webp" srcset="img/products/boho-earrings.webp 1x, img/products/boho-earrings@2x.webp 2x">
+                    <!-- 1x: 270px ; 2x: 540px -->
+                    <img src="img/products/boho-earrings.jpg" srcset="img/products/boho-earrings@2x.jpg 2x" alt="Boho earrings" width="270" height="272">
+                  </picture>
                 </div>
-                <a href="#" class="product__link"><span class="visually-hidden">Go to product page</span></a>
+                <div class="product-card__description">
+                  <p>Boho earrings</p>
+                  <p>$75</p>
+                </div>
               </div>
             </li>
             <li class="products__item">
-              <div class="product">
-                <div class="product__wrapper">
-                  <div class="product__image">
-                    <picture>
-                      <!-- webp -->
-                      <source type="image/webp" srcset="img/products/bird-necklace.webp 1x, img/products/bird-necklace@2x.webp 2x">
-                      <!-- 1x: 270px ; 2x: 540px -->
-                      <img src="img/products/bird-necklace.jpg" srcset="img/products/bird-necklace@2x.jpg 2x" alt="Gold bird necklace" width="270" height="272">
-                    </picture>
-                  </div>
-                  <div class="product__description">
-                    <p>Gold bird necklace</p>
-                    <p>$135</p>
-                  </div>
+              <div class="product-card">
+                <div class="product-card__image&quot;">
+                  <picture>
+                    <!-- webp -->
+                    <source type="image/webp" srcset="img/products/bird-necklace.webp 1x, img/products/bird-necklace@2x.webp 2x">
+                    <!-- 1x: 270px ; 2x: 540px -->
+                    <img src="img/products/bird-necklace.jpg" srcset="img/products/bird-necklace@2x.jpg 2x" alt="Gold bird necklace" width="270" height="272">
+                  </picture>
                 </div>
-                <a href="#" class="product__link"><span class="visually-hidden">Go to product page</span></a>
+                <div class="product-card__description">
+                  <p>Gold bird necklace</p>
+                  <p>$135</p>
+                </div>
               </div>
             </li>
             <li class="products__item">
-              <div class="product">
-                <div class="product__wrapper">
-                  <div class="product__image">
-                    <picture>
-                      <!-- webp -->
-                      <source type="image/webp" srcset="img/products/black-leather-choker-necklace.webp 1x, img/products/black-leather-choker-necklace@2x.webp 2x">
-                      <!-- 1x: 270px ; 2x: 540px -->
-                      <img src="img/products/black-leather-choker-necklace.jpg" srcset="img/products/black-leather-choker-necklace@2x.jpg 2x" alt="Black leather choker" width="270" height="272">
-                    </picture>
-                  </div>
-                  <div class="product__description">
-                    <p>Black leather choker</p>
-                    <p>$85</p>
-                  </div>
+              <div class="product-card">
+                <div class="product-card__image&quot;">
+                  <picture>
+                    <!-- webp -->
+                    <source type="image/webp" srcset="img/products/black-leather-choker-necklace.webp 1x, img/products/black-leather-choker-necklace@2x.webp 2x">
+                    <!-- 1x: 270px ; 2x: 540px -->
+                    <img src="img/products/black-leather-choker-necklace.jpg" srcset="img/products/black-leather-choker-necklace@2x.jpg 2x" alt="Black leather choker" width="270" height="272">
+                  </picture>
                 </div>
-                <a href="#" class="product__link"><span class="visually-hidden">Go to product page</span></a>
+                <div class="product-card__description">
+                  <p>Black leather choker</p>
+                  <p>$85</p>
+                </div>
               </div>
             </li>
             <li class="products__item">
-              <div class="product">
-                <div class="product__wrapper">
-                  <div class="product__image">
-                    <picture>
-                      <!-- webp -->
-                      <source type="image/webp" srcset="img/products/purple-gemstone-necklace.webp 1x, img/products/purple-gemstone-necklace@2x.webp 2x">
-                      <!-- 1x: 270px ; 2x: 540px -->
-                      <img src="img/products/purple-gemstone-necklace.jpg" srcset="img/products/purple-gemstone-necklace@2x.jpg 2x" alt="Necklace with amethyst" width="270" height="272">
-                    </picture>
-                  </div>
-                  <div class="product__description">
-                    <p>Necklace with amethyst</p>
-                    <p>$145</p>
-                  </div>
+              <div class="product-card">
+                <div class="product-card__image&quot;">
+                  <picture>
+                    <!-- webp -->
+                    <source type="image/webp" srcset="img/products/purple-gemstone-necklace.webp 1x, img/products/purple-gemstone-necklace@2x.webp 2x">
+                    <!-- 1x: 270px ; 2x: 540px -->
+                    <img src="img/products/purple-gemstone-necklace.jpg" srcset="img/products/purple-gemstone-necklace@2x.jpg 2x" alt="Necklace with amethyst" width="270" height="272">
+                  </picture>
                 </div>
-                <a href="#" class="product__link"><span class="visually-hidden">Go to product page</span></a>
+                <div class="product-card__description">
+                  <p>Necklace with amethyst</p>
+                  <p>$145</p>
+                </div>
               </div>
             </li>
             <li class="products__item">
-              <div class="product">
-                <div class="product__wrapper">
-                  <div class="product__image">
-                    <picture>
-                      <!-- webp -->
-                      <source type="image/webp" srcset="img/products/elephant-earrings.webp 1x, img/products/elephant-earrings@2x.webp 2x ">
-                      <!-- 1x: 270px ; 2x: 540px -->
-                      <img src="img/products/elephant-earrings.jpg" srcset="img/products/elephant-earrings@2x.jpg 2x" alt="Elephant earrings" width="270" height="272">
-                    </picture>
-                  </div>
-                  <div class="product__description">
-                    <p>Elephant earrings</p>
-                    <p>$95</p>
-                  </div>
+              <div class="product-card">
+                <div class="product-card__image&quot;">
+                  <picture>
+                    <!-- webp -->
+                    <source type="image/webp" srcset="img/products/elephant-earrings.webp 1x, img/products/elephant-earrings@2x.webp 2x ">
+                    <!-- 1x: 270px ; 2x: 540px -->
+                    <img src="img/products/elephant-earrings.jpg" srcset="img/products/elephant-earrings@2x.jpg 2x" alt="Elephant earrings" width="270" height="272">
+                  </picture>
                 </div>
-                <a href="#" class="product__link"><span class="visually-hidden">Go to product page</span></a>
+                <div class="product-card__description">
+                  <p>Elephant earrings</p>
+                  <p>$95</p>
+                </div>
               </div>
             </li>
             <li class="products__item">
-              <div class="product">
-                <div class="product__wrapper">
-                  <div class="product__image">
-                    <picture>
-                      <!-- webp -->
-                      <source type="image/webp" srcset="img/products/threader-necklace-closeup.webp 1x, img/products/threader-necklace-closeup@2x.webp 2x">
-                      <!-- 1x: 270px ; 2x: 540px -->
-                      <img src="img/products/threader-necklace-closeup.jpg" srcset="img/products/threader-necklace-closeup@2x.jpg 2x" alt="Threader necklace" width="270" height="272">
-                    </picture>
-                  </div>
-                  <div class="product__description">
-                    <p>Threader necklace</p>
-                    <p>$115</p>
-                  </div>
+              <div class="product-card">
+                <div class="product-card__image&quot;">
+                  <picture>
+                    <!-- webp -->
+                    <source type="image/webp" srcset="img/products/threader-necklace-closeup.webp 1x, img/products/threader-necklace-closeup@2x.webp 2x">
+                    <!-- 1x: 270px ; 2x: 540px -->
+                    <img src="img/products/threader-necklace-closeup.jpg" srcset="img/products/threader-necklace-closeup@2x.jpg 2x" alt="Threader necklace" width="270" height="272">
+                  </picture>
                 </div>
-                <a href="#" class="product__link"><span class="visually-hidden">Go to product page</span></a>
+                <div class="product-card__description">
+                  <p>Threader necklace</p>
+                  <p>$115</p>
+                </div>
               </div>
             </li>
             <li class="products__item">
-              <div class="product">
-                <div class="product__wrapper">
-                  <div class="product__image">
-                    <picture>
-                      <!-- webp -->
-                      <source type="image/webp" srcset="img/products/origami-crane-necklace.webp 1x, img/products/origami-crane-necklace@2x.webp 2x">
-                      <!-- 1x: 270px ; 2x: 540px -->
-                      <img src="img/products/origami-crane-necklace.jpg" srcset="img/products/origami-crane-necklace@2x.jpg 2x" alt="Origami crane necklace" width="270" height="272">
-                    </picture>
-                  </div>
-                  <div class="product__description">
-                    <p>Origami crane necklace</p>
-                    <p>$105</p>
-                  </div>
+              <div class="product-card">
+                <div class="product-card__image&quot;">
+                  <picture>
+                    <!-- webp -->
+                    <source type="image/webp" srcset="img/products/origami-crane-necklace.webp 1x, img/products/origami-crane-necklace@2x.webp 2x">
+                    <!-- 1x: 270px ; 2x: 540px -->
+                    <img src="img/products/origami-crane-necklace.jpg" srcset="img/products/origami-crane-necklace@2x.jpg 2x" alt="Origami crane necklace" width="270" height="272">
+                  </picture>
                 </div>
-                <a href="#" class="product__link"><span class="visually-hidden">Go to product page</span></a>
+                <div class="product-card__description">
+                  <p>Origami crane necklace</p>
+                  <p>$105</p>
+                </div>
               </div>
             </li>
             <li class="products__item">
-              <div class="product">
-                <div class="product__wrapper">
-                  <div class="product__image">
-                    <picture>
-                      <!-- webp -->
-                      <source type="image/webp" srcset="img/products/marble-earrings.webp 1x, img/products/marble-earrings@2x.webp 2x">
-                      <!-- 1x: 270px ; 2x: 540px -->
-                      <img src="img/products/marble-earrings.jpg" srcset="img/products/marble-earrings@2x.jpg 2x" alt="Marble earrings" width="270" height="272">
-                    </picture>
-                  </div>
-                  <div class="product__description">
-                    <p>Marble earrings</p>
-                    <p>$95</p>
-                  </div>
+              <div class="product-card">
+                <div class="product-card__image&quot;">
+                  <picture>
+                    <!-- webp -->
+                    <source type="image/webp" srcset="img/products/marble-earrings.webp 1x, img/products/marble-earrings@2x.webp 2x">
+                    <!-- 1x: 270px ; 2x: 540px -->
+                    <img src="img/products/marble-earrings.jpg" srcset="img/products/marble-earrings@2x.jpg 2x" alt="Marble earrings" width="270" height="272">
+                  </picture>
                 </div>
-                <a href="#" class="product__link"><span class="visually-hidden">Go to product page</span></a>
+                <div class="product-card__description">
+                  <p>Marble earrings</p>
+                  <p>$95</p>
+                </div>
               </div>
             </li>
           </ul>
-        </section>
-      </div>
-      <section class="catalog__pagination">
-        <h3 class="visually-hidden">Catalog pagination</h3>
-        <ul class="paginator">
-          <li class="paginator__item">
+          <div class="paginator">
             <a class="paginator__prev" href="#prev">Previous
               <span class="visually-hidden">Previous</span>
             </a>
-          </li>
-          <li class="paginator__item">
-            <a class="current" href="#">1</a>
-          </li>
-          <li class="paginator__item">
-            <a href="#">2</a>
-          </li>
-          <li class="paginator__item">
-            <a href="#">3</a>
-          </li>
-          <li class="paginator__item">
-            <a href="#">4</a>
-          </li>
-          <li class="paginator__item">
-            <a href="#">5</a>
-          </li>
-          <li class="paginator-item">
+            <ul class="paginator__list">
+              <li class="paginator__item">
+                <a class="current" href="#">1</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#">2</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#">3</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#">4</a>
+              </li>
+              <li class="paginator__item">
+                <a href="#">5</a>
+              </li>
+            </ul>
             <a class="paginator__next" href="#next">Next
               <span class="visually-hidden">Next pages</span>
             </a>
-          </li>
-        </ul>
-      </section>
+          </div>
+        </section>
+      </div>
     </section>
   </main>
   <footer class="page__footer footer">
