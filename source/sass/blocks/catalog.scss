@@ -15,7 +15,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 40px 15px 70px;
+    // width: 100vw;
+    padding: 40px 15px 65px;
   }
 }
 
@@ -23,6 +24,17 @@
   grid-area: items;
   display: flex;
   flex-direction: column;
+
+  & .product-card__image {
+    min-height: 272px;
+
+    @media (max-width: $desktop-width) {
+      min-height: 208px;
+    }
+    @media (max-width: $tablet-width) {
+      min-height: 136px;
+    }
+  }
 }
 
 .catalog__filter {

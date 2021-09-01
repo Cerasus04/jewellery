@@ -46,6 +46,18 @@
   }
 }
 
+// .product-card__image {
+//   min-height: 284px;
+
+//   @media (max-width: $desktop-width) {
+//     min-height: 340px;
+//   }
+
+//   @media (max-width: $tablet-width) {
+//     min-height: 136px;
+//   }
+// }
+
 .product-card__image picture,
 .product-card__image img {
   display: block;

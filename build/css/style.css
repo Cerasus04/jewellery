@@ -762,23 +762,6 @@ ul {
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .promo--catalog {
       background-image: url("../img/bg-promo-catalog@2x.jpg"); } }
-  @media (max-width: 1023px) {
-    .promo--catalog {
-      padding-top: 92px;
-      padding-bottom: 92px;
-      padding-left: 30px;
-      background-image: url("../img/bg-promo-catalog-tablet.jpg"); } }
-  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
-    .promo--catalog {
-      background-image: url("../img/bg-promo-catalog-tablet@2x.jpg"); } }
-  @media (max-width: 767px) {
-    .promo--catalog {
-      padding: 80px 15px;
-      padding-bottom: 78px;
-      background-image: url("../img/bg-promo-catalog-mobile.jpg"); } }
-  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
-    .promo--catalog {
-      background-image: url("../img/bg-promo-catalog-mobile@2x.jpg"); } }
   .promo--catalog h2 {
     width: 540px;
     font-weight: 500;
@@ -791,6 +774,26 @@ ul {
       @media (max-width: 767px) {
         .promo--catalog h2 span {
           line-height: 29px; } }
+  @media (max-width: 1023px) {
+    .promo--catalog {
+      padding-top: 92px;
+      padding-bottom: 92px;
+      padding-left: 30px;
+      background-image: url("../img/bg-promo-catalog-tablet.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
+    .promo--catalog {
+      background-image: url("../img/bg-promo-catalog-tablet@2x.jpg"); } }
+  @media (max-width: 1023px) {
+      .promo--catalog h2 {
+        width: 100%; } }
+  @media (max-width: 767px) {
+    .promo--catalog {
+      padding: 80px 15px;
+      padding-bottom: 78px;
+      background-image: url("../img/bg-promo-catalog-mobile.jpg"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+    .promo--catalog {
+      background-image: url("../img/bg-promo-catalog-mobile@2x.jpg"); } }
 
 .new-in {
   position: relative;
@@ -1857,7 +1860,7 @@ ul {
       grid-template-rows: min-content 1fr; } }
   @media (max-width: 767px) {
     .catalog__container {
-      padding: 40px 15px 70px; } }
+      padding: 40px 15px 65px; } }
 
 .catalog__products {
   grid-area: items;
@@ -1868,6 +1871,14 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .catalog__products .product-card__image {
+    min-height: 272px; }
+    @media (max-width: 1023px) {
+      .catalog__products .product-card__image {
+        min-height: 208px; } }
+    @media (max-width: 767px) {
+      .catalog__products .product-card__image {
+        min-height: 136px; } }
 
 .catalog__filter {
   grid-area: filter; }
@@ -1892,14 +1903,15 @@ ul {
           column-gap: 30px; }
   @media (max-width: 767px) {
     .products {
-      grid-template-columns: repeat(2, 1fr); } }
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 10px; } }
 
 @media (max-width: 767px) {
   .products__item {
     width: 100%; } }
 
 .products .product-card__description {
-  padding: 14px 0 27px; }
+  padding: 14px 0; }
 
 .paginator {
   display: -webkit-box;
@@ -1912,9 +1924,11 @@ ul {
   @media (max-width: 1023px) {
     .paginator {
       padding-top: 49px; } }
+  @media (max-width: 767px) {
+    .paginator {
+      padding-top: 30px; } }
 
 .paginator__list {
-  outline: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1926,7 +1940,7 @@ ul {
           box-sizing: border-box; }
   @media (max-width: 767px) {
     .paginator__list {
-      margin: 0 auto; } }
+      width: 100%; } }
 
 .paginator__prev {
   margin-right: 264px; }
@@ -1939,6 +1953,11 @@ ul {
 
 .paginator__item {
   margin-right: 13px; }
+  @media (max-width: 767px) {
+    .paginator__item {
+      margin-right: 24px; }
+      .paginator__item:last-of-type {
+        margin-right: 0; } }
 
 .paginator__next {
   margin-left: auto; }

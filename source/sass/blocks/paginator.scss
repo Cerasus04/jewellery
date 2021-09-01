@@ -6,17 +6,20 @@
   @media (max-width: $desktop-width) {
     padding-top: 49px;
   }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 30px;
+  }
 }
 
 .paginator__list {
-  outline: 1px solid red;
   display: flex;
   justify-content: center;
   width: 25%;
   box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
-    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -33,6 +36,14 @@
 
 .paginator__item {
   margin-right: 13px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 24px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
 }
 
 .paginator__next {

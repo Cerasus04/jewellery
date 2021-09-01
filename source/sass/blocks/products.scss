@@ -6,6 +6,7 @@
 
   @media (max-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
   }
 }
 
@@ -15,5 +16,5 @@
   }
 }
 .products .product-card__description {
-  padding: 14px 0 27px;
+  padding: 14px 0;
 }
