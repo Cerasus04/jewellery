@@ -1,27 +1,26 @@
 'use strict';
 
 (() => {
-  const accordion = document.querySelector(".faq");
+  const accordion = document.querySelector(".accordion");
   if (accordion) {
     const isAccordionFaq = accordion.classList.contains("faq__list");
     let openedTab;
 
     const closeTab = () => {
-      openedTab.classList.remove("faq__item--open");
+      openedTab.classList.remove("accordion__tab--open");
       openedTab = null;
     };
 
-    accordion.classList.add("faq--js");
+    accordion.classList.add("accordion--js");
     accordion.addEventListener("click", (e) => {
       const target = e.target;
-      if (target.classList.contains("faq__button")) {
+      if (target.classList.contains("accordion__button")) {
         if (isAccordionFaq && openedTab && target.parentElement !== openedTab) {
           closeTab();
         }
-        target.parentElement.classList.toggle("faq__item--open");
+        target.parentElement.classList.toggle("accordion__tab--open");
         openedTab = target.parentElement;
       }
     });
   }
-
 })();
