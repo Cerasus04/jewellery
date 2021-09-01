@@ -8,6 +8,7 @@ module.exports = {
     './source/js/accordion.js',
     './source/js/form.js',
     './source/js/localstorage.js',
+    './source/js/range.js',
   ],
   output: {
     filename: 'main.js',

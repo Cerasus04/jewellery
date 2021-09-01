@@ -1,0 +1,143 @@
+.filter {
+  width: 100%;
+
+}
+.filter__inner {
+  border: solid $basic-brown;
+  border-width: 1px 0 0;
+}
+
+.filter__block {
+  padding: 28px 30px 29px 35px;
+  border: solid $basic-brown;
+  border-width: 0 1px 1px;
+}
+
+.filter__block--product {
+}
+.filter__block-head {
+  position: relative;
+  padding-bottom: 27px;
+  font-size: 16px;
+}
+
+.filter__subtitle {
+}
+.filter__head-button {
+}
+.filter__list {
+}
+.filter__item {
+}
+.filter__checkbox-label {
+}
+.filter__block--material {
+}
+.filter__block--collection {
+}
+.filter__block--price {
+}
+.filter__buttons {
+}
+
+
+.filter__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: $basic-white;
+
+  background-color: $basic-brown;
+  border: 1px solid $basic-brown;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: $basic-white;
+    background-color: $basic-black;
+  }
+
+  @media (max-width: $desktop-width)  {
+    width: calc(100% - 80px);
+    margin: 0 40px;
+  }
+
+  @media (max-width: $tablet-width)  {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+}
+
+.filter__button--white {
+  margin-top: 25px;
+
+  color: $basic-black;
+
+  background-color: $basic-white;
+
+  &:active {
+    color: $basic-white;
+
+    background-color: $basic-brown;
+  }
+
+  @media (max-width: $desktop-width)  {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 21px;
+    margin-bottom: 30px;
+  }
+}
+.filter__button {
+}
+.filter__close {
+  display: none;
+}
+
+.filter__item {
+  margin-bottom: 12px;
+}
+
+.filter__checkbox-label {
+  font-family: $poppins;
+  font-size: 14px;
+  line-height: 18px;
+
+  padding-left: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.filter__checkbox-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid $basic-brown;
+}
+
+
+:checked + .filter__checkbox-label::after {
+  background: $basic-brown;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid $basic-brown;
+}

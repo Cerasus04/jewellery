@@ -15,21 +15,15 @@
   display: block;
 }
 
-.accordion--js .faq__button {
+.accordion--js .accordion__button {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
 
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  padding-top: 50px;
-  padding-right: 48px;
 
   background-color: transparent;
   border: none;
@@ -64,4 +58,18 @@
 
 .accordion__tab--open .accordion__icon--close {
   display: block;
+}
+
+.accordion__button svg {
+  color: $basic-brown;
+  pointer-events: none;
+  fill: transparent;
+
+  @media (max-width: $desktop-width) {
+    transform: scale(1.5);
+  }
+
+  @media (max-width: $tablet-width) {
+    transform: scale(1.3);
+  }
 }

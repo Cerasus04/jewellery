@@ -105,7 +105,7 @@
       letter-spacing: normal;
 
       @media (max-width: $tablet-width) {
-        line-height: 29px;
+        line-height: 30px;
       }
     }
   }
@@ -126,12 +126,17 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 80px 15px;
+    padding: 84px 15px 78px;
     padding-bottom: 78px;
     background-image: url("../img/bg-promo-catalog-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-promo-catalog-mobile@2x.jpg");
+    }
+
+    & h2 {
+      padding: 0 15px;
+      font-size: 22px;
     }
   }
 

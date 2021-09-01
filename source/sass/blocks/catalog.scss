@@ -8,14 +8,13 @@
   gap: 56px;
 
   @media (max-width: $desktop-width) {
-    padding: 50px 45px 80px;
+    padding: 50px 45px 78px;
     grid-template-areas: "filter" "items";
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
   }
 
   @media (max-width: $tablet-width) {
-    // width: 100vw;
     padding: 40px 15px 65px;
   }
 }
@@ -31,6 +30,7 @@
     @media (max-width: $desktop-width) {
       min-height: 208px;
     }
+
     @media (max-width: $tablet-width) {
       min-height: 136px;
     }
@@ -46,4 +46,32 @@
   display: flex;
   flex-direction: column;
   background-color: red;
+}
+
+.catalog__filter-button {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid $basic-brown;
+    padding: 28px;
+    text-align: center;
+    background-color: $basic-brown;
+    color: $basic-white;
+  }
+}
+
+.catalog__filter--nojs {
+  & .catalog__filter-button {
+
+    @media (max-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  & .filter__head-button {
+    display: none;
+  }
 }

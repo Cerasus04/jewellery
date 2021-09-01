@@ -105,20 +105,8 @@
 
 .faq__button {
   display: none;
+  width: 100%;
+  padding-top: 50px;
+  padding-right: 48px;
 }
 
-.faq__button svg {
-  color: $basic-brown;
-
-  pointer-events: none;
-
-  fill: transparent;
-
-  @media (max-width: $desktop-width) {
-    transform: scale(1.5);
-  }
-
-  @media (max-width: $tablet-width) {
-    transform: scale(1.3);
-  }
-}

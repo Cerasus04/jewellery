@@ -1,14 +1,14 @@
 .paginator {
   display: flex;
   justify-content: flex-start;
-  padding-top: 40px;
+  padding-top: 59px;
 
   @media (max-width: $desktop-width) {
-    padding-top: 49px;
+    padding-top: 58px;
   }
 
   @media (max-width: $tablet-width) {
-    padding-top: 30px;
+    padding-top: 37px;
   }
 }
 
@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   width: 25%;
+  margin: 0 auto;
   box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
@@ -24,10 +25,10 @@
 }
 
 .paginator__prev {
-  margin-right: 264px;
+  // margin-right: 264px;
 
   @media (max-width: $desktop-width) {
-    margin-right: 189px;
+    // margin-right: 189px;
   }
   @media (max-width: $tablet-width) {
     display: none;
@@ -36,6 +37,7 @@
 
 .paginator__item {
   margin-right: 13px;
+  color: $placeholder-grey;
 
   @media (max-width: $tablet-width) {
     margin-right: 24px;
@@ -44,10 +46,14 @@
       margin-right: 0;
     }
   }
+
+  & .current {
+    color: $basic-black;
+  }
 }
 
 .paginator__next {
-  margin-left: auto;
+  // margin-left: auto;
 
   @media (max-width: $tablet-width) {
     display: none;
