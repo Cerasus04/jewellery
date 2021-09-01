@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 98px 0;
+  padding: 92px 0;
 
   @media (max-width: $desktop-width) {
     width: 100%;
@@ -33,6 +33,7 @@
     @include title;
     letter-spacing: 0.8px;
     text-align: left;
+    margin-bottom: 8px;
   }
 
   & p {

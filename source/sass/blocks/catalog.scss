@@ -1,21 +1,28 @@
 .catalog__container {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 80px 98px;
+  padding: 80px 98px 76px;
   display: grid;
-  grid-area: "filter" "items";
+  grid-template-areas: "filter items";
   grid-template-columns: 21% 1fr;
-  gap: 50px;
+  gap: 56px;
+
+  @media (max-width: $desktop-width) {
+    padding: 50px 45px 80px;
+    grid-template-areas: "filter" "items";
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+  }
 }
 
 .catalog__products {
-  grid-area: "items";
+  grid-area: items;
   display: flex;
   flex-direction: column;
 }
 
 .catalog__filter {
-  grid-area: "filter";
+  grid-area: filter;
 }
 
 .catalog__wrapper {

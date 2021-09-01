@@ -1,10 +1,33 @@
 .paginator {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding-top: 40px;
+
+  @media (max-width: $desktop-width) {
+    padding-top: 49px;
+  }
 }
 
 .paginator__list {
+  outline: 1px solid red;
   display: flex;
-  justify-content: space-between;
-  width: 96px;
+  justify-content: center;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.paginator__prev {
+  margin-right: 264px;
+
+  @media (max-width: $desktop-width) {
+    margin-right: 189px;
+  }
+}
+
+.paginator__item {
+  margin-right: 13px;
+}
+
+.paginator__next {
+  margin-left: auto;
 }

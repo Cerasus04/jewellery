@@ -2,5 +2,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 30px;
+  column-gap: 30px;
+}
+
+.products .product-card__description {
+  padding: 14px 0 27px;
 }
