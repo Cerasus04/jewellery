@@ -13,6 +13,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 40px 15px 70px;
+  }
 }
 
 .catalog__products {

@@ -4,6 +4,9 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 
 (() => {
+  const newInSlider = document.querySelector('.new-in__slider');
+  newInSlider.classList.remove('new-in__slider--nojs');
+
   new Swiper('.new-in__slider', {
     navigation: {
       nextEl: '.new-in__slider-btn--next',
