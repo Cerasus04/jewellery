@@ -3,8 +3,7 @@
 (() => {
   const accordion = document.querySelector(".accordion");
   if (accordion) {
-    // const isAccordionFaq = accordion.classList.contains("faq__list");
-    const isAccordionFaq = accordion.classList.contains("accordion");
+    const isAccordionFaq = accordion.classList.contains("faq__list");
 
     let openedTab;
 

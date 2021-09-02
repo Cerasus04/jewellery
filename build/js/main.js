@@ -12438,76 +12438,6 @@ var __webpack_exports__ = {};
 }();
 // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
 !function() {
-var __webpack_exports__ = {};
-/*!*****************************!*\
-  !*** ./source/js/slider.js ***!
-  \*****************************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
-
-
-
-swiper__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination]);
-
-(() => {
-  const newInSlider = document.querySelector('.new-in__slider');
-  newInSlider.classList.remove('new-in__slider--nojs');
-
-  new swiper__WEBPACK_IMPORTED_MODULE_0__.default('.new-in__slider', {
-    navigation: {
-      nextEl: '.new-in__slider-btn--next',
-      prevEl: '.new-in__slider-btn--prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: false,
-          type: 'fraction',
-          renderFraction: function (currentClass, totalClass) {
-            return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
-          },
-        },
-      },
-      768: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + '</span>';
-          },
-        },
-      },
-      1024: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + '</span>';
-          },
-        },
-      }
-    },
-    simulateTouch: false,
-    spaceBetween: 30,
-    watchOverflow: true,
-    loop: true,
-    speed: 800,
-  });
-})();
-
-}();
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
-!function() {
 /*!********************************!*\
   !*** ./source/js/accordion.js ***!
   \********************************/
@@ -12516,8 +12446,7 @@ swiper__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper__WEBPACK_IMPORTED_MODULE
 (() => {
   const accordion = document.querySelector(".accordion");
   if (accordion) {
-    // const isAccordionFaq = accordion.classList.contains("faq__list");
-    const isAccordionFaq = accordion.classList.contains("accordion");
+    const isAccordionFaq = accordion.classList.contains("faq__list");
 
     let openedTab;
 
@@ -12670,6 +12599,75 @@ btnCallMobile.addEventListener('click', openPopup);
 
     range.addEventListener("input", onRangeInput, false);
   }
+})();
+
+}();
+// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+!function() {
+/*!*****************************!*\
+  !*** ./source/js/slider.js ***!
+  \*****************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+
+
+
+swiper__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination]);
+
+(() => {
+  const newInSlider = document.querySelector('.new-in__slider');
+  newInSlider.classList.remove('new-in__slider--nojs');
+
+  new swiper__WEBPACK_IMPORTED_MODULE_0__.default('.new-in__slider', {
+    navigation: {
+      nextEl: '.new-in__slider-btn--next',
+      prevEl: '.new-in__slider-btn--prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: false,
+          type: 'fraction',
+          renderFraction: function (currentClass, totalClass) {
+            return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
+          },
+        },
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+          },
+        },
+      },
+      1024: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+          },
+        },
+      }
+    },
+    simulateTouch: false,
+    spaceBetween: 30,
+    watchOverflow: true,
+    loop: true,
+    speed: 800,
+  });
 })();
 
 }();

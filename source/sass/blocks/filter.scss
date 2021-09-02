@@ -8,44 +8,28 @@
 }
 
 .filter__block {
-  padding: 21px 19px 15px 24px;
+  position: relative;
+  padding: 21px 19px 13px 24px;
   border: solid $basic-brown;
   border-width: 0 1px 1px;
-}
 
-.filter__block--product {
-}
-
-.filter__block-head {
-  position: relative;
-  padding-bottom: 21px;
-  font-size: 16px;
+  & h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 13px;
+    font-size: 16px;
+  }
 }
 
 .filter__content {
-  padding: 0 10px;
-}
-.filter__subtitle {
-}
-.filter__head-button {
-  display: none;
-  top: 6px;
-}
-.filter__list {
-}
-.filter__item {
-}
-.filter__checkbox-label {
-}
-.filter__block--material {
-}
-.filter__block--collection {
-}
-.filter__block--price {
-}
-.filter__buttons {
+  padding: 8px 10px 2px;
 }
 
+.filter__head-button {
+  display: none;
+  padding-top: 25px;
+  padding-right: 19px;
+}
 
 .filter__button {
   display: flex;
@@ -106,8 +90,7 @@
     margin-bottom: 30px;
   }
 }
-.filter__button {
-}
+
 .filter__close {
   display: none;
 }
