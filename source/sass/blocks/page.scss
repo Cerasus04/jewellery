@@ -19,4 +19,11 @@
   &--js {
     overflow: hidden;
   }
+
+  &--nojs {
+    grid-template-rows: min-content 1fr;
+    & .modal-login {
+      display: block;
+    }
+  }
 }
