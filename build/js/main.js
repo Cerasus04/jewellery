@@ -12615,7 +12615,6 @@ btnCallMobile.addEventListener('click', openPopup);
   const filterCall = document.querySelector('.catalog__filter-button');
   const filterClose = document.querySelector('.filter__close');
 
-
   catalogFilter.classList.remove('catalog__filter--nojs');
 
   const onPopupEscPress = (evt) => {

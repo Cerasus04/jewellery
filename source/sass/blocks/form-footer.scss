@@ -6,8 +6,6 @@
   & input {
     width: 100%;
     padding: 5px 10px 5px 0;
-    padding-right: 10px;
-
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
@@ -47,12 +45,10 @@
   align-items: center;
   margin: 0;
   padding: 0;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   color: $basic-white;
-
   background-color: $bg-black;
   border: none;
   cursor: pointer;

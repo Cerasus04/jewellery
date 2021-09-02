@@ -685,10 +685,7 @@ ul {
 
 .promo {
   position: relative;
-  padding-top: 180px;
-  padding-right: 15px;
-  padding-bottom: 182px;
-  padding-left: 15px;
+  padding: 180px 15px 182px 15px;
   font-family: "Cormorant Garamond", "Times", serif;
   text-align: center;
   color: #ffffff;
@@ -718,9 +715,7 @@ ul {
       background-image: url("../img/bg-promo-tablet@2x.jpg"); } }
   @media (max-width: 767px) {
     .promo {
-      padding-top: 190px;
-      padding-right: 15px;
-      padding-bottom: 190px;
+      padding: 180px 15px;
       background-image: url("../img/bg-promo-mobile.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
     .promo {
@@ -1388,9 +1383,6 @@ ul {
   background-color: #000000; }
 
 .footer__container {
-  width: 85.6%;
-  max-width: 1170px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1400,13 +1392,15 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 85.6%;
+  max-width: 1170px;
+  margin: 0 auto;
   padding: 92px 0; }
   @media (max-width: 1023px) {
     .footer__container {
       width: 100%;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      padding-top: 50px;
       padding: 48px 163px 54px 45px; } }
   @media (max-width: 767px) {
     .footer__container {
@@ -1535,7 +1529,6 @@ ul {
   .form-footer__container input {
     width: 100%;
     padding: 5px 10px 5px 0;
-    padding-right: 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
@@ -1846,13 +1839,13 @@ ul {
     display: block; }
 
 .catalog__container {
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 80px 98px 76px;
   display: grid;
   grid-template-areas: "filter items";
   grid-template-columns: 21% 1fr;
-  gap: 56px; }
+  gap: 56px;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 80px 98px 76px; }
   @media (max-width: 1023px) {
     .catalog__container {
       padding: 50px 45px 78px;

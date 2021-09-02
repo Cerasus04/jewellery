@@ -4,18 +4,17 @@
 }
 
 .footer__container {
-  width: 85.6%;
-  max-width: 1170px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  width: 85.6%;
+  max-width: 1170px;
+  margin: 0 auto;
   padding: 92px 0;
 
   @media (max-width: $desktop-width) {
     width: 100%;
     flex-wrap: wrap;
-    padding-top: 50px;
     padding: 48px 163px 54px 45px;
   }
 

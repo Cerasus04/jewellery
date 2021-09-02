@@ -1,9 +1,6 @@
 .promo {
   position: relative;
-  padding-top: 180px;
-  padding-right: 15px;
-  padding-bottom: 182px;
-  padding-left: 15px;
+  padding: 180px 15px 182px 15px;
   font-family: $cormorant;
   text-align: center;
   color: $basic-white;
@@ -37,9 +34,10 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding-top: 190px;
-    padding-right: 15px;
-    padding-bottom: 190px;
+    padding: 180px 15px;
+    // padding-top: 190px;
+    // padding-right: 15px;
+    // padding-bottom: 190px;
     background-image: url("../img/bg-promo-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -139,6 +137,4 @@
       font-size: 22px;
     }
   }
-
-
 }

@@ -57,12 +57,10 @@
   align-items: center;
   width: 100%;
   padding: 22px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   color: $basic-white;
-
   background-color: $basic-brown;
   border: 1px solid $basic-brown;
   cursor: pointer;
@@ -90,14 +88,11 @@
 
 .filter__button--white {
   margin-top: 25px;
-
   color: $basic-black;
-
   background-color: $basic-white;
 
   &:active {
     color: $basic-white;
-
     background-color: $basic-brown;
   }
 
@@ -123,7 +118,6 @@
     width: 32px;
     height: 32px;
     color: $basic-white;
-
     background-color: $basic-black;
     border: none;
     border-radius: 50%;
@@ -136,7 +130,6 @@
 
     &:active {
       color: $basic-black;
-
       background-color: $basic-white;
     }
 
@@ -159,7 +152,6 @@
   font-family: $poppins;
   font-size: 14px;
   line-height: 18px;
-
   padding-left: 25px;
   position: relative;
   cursor: pointer;
