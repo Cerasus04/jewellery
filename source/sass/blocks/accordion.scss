@@ -7,17 +7,18 @@
   }
 }
 
-.accordion--js p {
+.accordion--js p,
+.accordion--js .filter__content {
   display: none;
 }
 
-.accordion__tab--open p {
+.accordion__tab--open p,
+.accordion__tab--open .filter__content {
   display: block;
 }
 
 .accordion--js .accordion__button {
   position: absolute;
-  top: 0;
   right: 0;
   bottom: 0;
 

@@ -12516,7 +12516,9 @@ swiper__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper__WEBPACK_IMPORTED_MODULE
 (() => {
   const accordion = document.querySelector(".accordion");
   if (accordion) {
-    const isAccordionFaq = accordion.classList.contains("faq__list");
+    // const isAccordionFaq = accordion.classList.contains("faq__list");
+    const isAccordionFaq = accordion.classList.contains("accordion");
+
     let openedTab;
 
     const closeTab = () => {

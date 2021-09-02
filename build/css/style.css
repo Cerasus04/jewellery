@@ -1238,7 +1238,8 @@ ul {
   display: none;
   width: 100%;
   padding-top: 50px;
-  padding-right: 48px; }
+  padding-right: 48px;
+  top: 0; }
 
 .accordion--js .faq__item:not(.accordion__tab--open) {
   padding-bottom: 48px; }
@@ -1246,15 +1247,16 @@ ul {
     .accordion--js .faq__item:not(.accordion__tab--open) {
       padding-bottom: 20px; } }
 
-.accordion--js p {
+.accordion--js p,
+.accordion--js .filter__content {
   display: none; }
 
-.accordion__tab--open p {
+.accordion__tab--open p,
+.accordion__tab--open .filter__content {
   display: block; }
 
 .accordion--js .accordion__button {
   position: absolute;
-  top: 0;
   right: 0;
   bottom: 0;
   display: -webkit-box;
@@ -1850,7 +1852,7 @@ ul {
   padding: 80px 98px 76px;
   display: grid;
   grid-template-areas: "filter items";
-  grid-template-columns: 21% 1fr;
+  grid-template-columns: 21.5% 1fr;
   gap: 56px; }
   @media (max-width: 1023px) {
     .catalog__container {
@@ -1924,14 +1926,21 @@ ul {
   border-width: 1px 0 0; }
 
 .filter__block {
-  padding: 28px 30px 29px 35px;
+  padding: 21px 19px 15px 24px;
   border: solid #a87b62;
   border-width: 0 1px 1px; }
 
 .filter__block-head {
   position: relative;
-  padding-bottom: 27px;
+  padding-bottom: 21px;
   font-size: 16px; }
+
+.filter__content {
+  padding: 0 10px; }
+
+.filter__head-button {
+  display: none;
+  top: 6px; }
 
 .filter__button {
   display: -webkit-box;
@@ -1985,7 +1994,7 @@ ul {
   display: none; }
 
 .filter__item {
-  margin-bottom: 12px; }
+  margin-bottom: 10px; }
 
 .filter__checkbox-label {
   font-family: "Poppins", "Arial", sans-serif;

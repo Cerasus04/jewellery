@@ -8,22 +8,28 @@
 }
 
 .filter__block {
-  padding: 28px 30px 29px 35px;
+  padding: 21px 19px 15px 24px;
   border: solid $basic-brown;
   border-width: 0 1px 1px;
 }
 
 .filter__block--product {
 }
+
 .filter__block-head {
   position: relative;
-  padding-bottom: 27px;
+  padding-bottom: 21px;
   font-size: 16px;
 }
 
+.filter__content {
+  padding: 0 10px;
+}
 .filter__subtitle {
 }
 .filter__head-button {
+  display: none;
+  top: 6px;
 }
 .filter__list {
 }
@@ -107,7 +113,7 @@
 }
 
 .filter__item {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .filter__checkbox-label {
