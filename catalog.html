@@ -11,7 +11,7 @@
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="page">
+<body class="page page--catalog">
   <header class="page__header header header--nojs">
     <div class="header__container header__container--nojs">
       <div class="header__top">
@@ -21,7 +21,7 @@
           </svg>
         </button>
         <div class="header__logo">
-          <a href="index.html" aria-label="Logo Jewellery" id="top">
+          <a href="main.html" aria-label="Logo Jewellery" id="top">
             <svg width="66" height="66">
               <use href="img/sprite.svg#icon-logo"></use>
             </svg>
@@ -89,26 +89,30 @@
     <section class="main__catalog catalog">
       <h2 class="visually-hidden">Jewellery shop assortment</h2>
       <div class="catalog__container">
-        <section class="catalog__filter"> <!-- catalog__filter--nojs -->
+        <section class="catalog__filter catalog__filter--nojs">
           <h3 class="visually-hidden">Filter products</h3>
           <button class="catalog__filter-button" id="filter">
             Filter
           </button>
           <div class="catalog__filter-wrapper">
-            <form class="catalog__filter filter" action="https://echo.htmlacademy.ru" method="GET">
-              <div class="filter__inner accordion accordion--js">
-                <div class="filter__block accordion__item filter__block--product">
-                  <div class="filter__block-head">
-                    <div class="filter__subtitle">Product</div>
-                    <button class="filter__head-button accordion__button" type="button">
-                      <span class="visually-hidden">Open / Close faq section</span>
-                      <svg width="17" height="10">
-                        <use class="accordion__icon accordion__icon--open" href="img/sprite.svg#icon-arrow-down"></use>
-                        <use class="accordion__icon accordion__icon--close" href="img/sprite.svg#icon-arrow-up"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="accordion__content">
+            <form class="catalog__form filter" action="https://echo.htmlacademy.ru" method="GET">
+              <div class="filter__inner accordion">
+                <button class="filter__close" type="button" id="filter-close">
+                  <span class="visually-hidden">Close popup</span>
+                  <svg width="14" height="14">
+                    <use href="img/sprite.svg#icon-cross"></use>
+                  </svg>
+                </button>
+                <div class="filter__block accordion__tab filter__block--product">
+                  <h3>Product</h3>
+                  <button class="filter__head-button accordion__button" type="button">
+                    <span class="visually-hidden">Open / Close faq section</span>
+                    <svg width="17" height="10">
+                      <use class="accordion__icon accordion__icon--open" href="img/sprite.svg#icon-arrow-down"></use>
+                      <use class="accordion__icon accordion__icon--close" href="img/sprite.svg#icon-arrow-up"></use>
+                    </svg>
+                  </button>
+                  <div class="filter__content accordion__content">
                     <ul class="filter__list accordion__inner">
                       <li class="filter__item">
                         <input type="checkbox" class="visually-hidden" id="necklaces" name="necklaces" value="necklaces" checked="">
@@ -129,18 +133,16 @@
                     </ul>
                   </div>
                 </div>
-                <div class="filter__block accordion__item filter__block--material">
-                  <div class="filter__block-head">
-                    <div class="filter__subtitle">Material</div>
-                    <button class="filter__head-button accordion__button" type="button">
-                      <span class="visually-hidden">Open / Close faq section</span>
-                      <svg width="17" height="10">
-                        <use class="accordion__icon accordion__icon--open" href="img/sprite.svg#icon-arrow-down"></use>
-                        <use class="accordion__icon accordion__icon--close" href="img/sprite.svg#icon-arrow-up"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="accordion__content">
+                <div class="filter__block accordion__tab filter__block--material">
+                  <h3>Material</h3>
+                  <button class="filter__head-button accordion__button" type="button">
+                    <span class="visually-hidden">Open / Close faq section</span>
+                    <svg width="17" height="10">
+                      <use class="accordion__icon accordion__icon--open" href="img/sprite.svg#icon-arrow-down"></use>
+                      <use class="accordion__icon accordion__icon--close" href="img/sprite.svg#icon-arrow-up"></use>
+                    </svg>
+                  </button>
+                  <div class="filter__content accordion__content">
                     <ul class="filter__list accordion__inner">
                       <li class="filter__item">
                         <input type="checkbox" class="visually-hidden" id="gold" name="gold" value="gold" checked="">
@@ -153,9 +155,8 @@
                     </ul>
                   </div>
                 </div>
-                <div class="filter__block accordion__item filter__block--collection">
-                  <div class="filter__block-head">
-                    <div class="filter__subtitle">Collection</div>
+                <div class="filter__block accordion__tab filter__block--collection">
+                    <h3>Collection</h3>
                     <button class="filter__head-button accordion__button" type="button">
                       <span class="visually-hidden">Open / Close faq section</span>
                       <svg width="17" height="10">
@@ -163,8 +164,7 @@
                         <use class="accordion__icon accordion__icon--close" href="img/sprite.svg#icon-arrow-up"></use>
                       </svg>
                     </button>
-                  </div>
-                  <div class="accordion__content">
+                  <div class="filter__content accordion__content">
                     <ul class="filter__list accordion__inner">
                       <li class="filter__item">
                         <input type="checkbox" class="visually-hidden" id="flamingo" name="flamingo" value="flamingo">
@@ -177,18 +177,16 @@
                     </ul>
                   </div>
                 </div>
-                <div class="filter__block accordion__item filter__block--price">
-                  <div class="filter__block-head">
-                    <div class="filter__subtitle">Price</div>
-                    <button class="filter__head-button accordion__button" type="button">
-                      <span class="visually-hidden">Open / Close faq section</span>
-                      <svg width="17" height="10">
-                        <use class="accordion__icon accordion__icon--open" href="img/sprite.svg#icon-arrow-down"></use>
-                        <use class="accordion__icon accordion__icon--close" href="img/sprite.svg#icon-arrow-up"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="accordion__content">
+                <div class="filter__block accordion__tab filter__block--price">
+                  <h3>Price</h3>
+                  <button class="filter__head-button accordion__button" type="button">
+                    <span class="visually-hidden">Open / Close faq section</span>
+                    <svg width="17" height="10">
+                      <use class="accordion__icon accordion__icon--open" href="img/sprite.svg#icon-arrow-down"></use>
+                      <use class="accordion__icon accordion__icon--close" href="img/sprite.svg#icon-arrow-up"></use>
+                    </svg>
+                  </button>
+                  <div class="filter__content accordion__content">
                     <div class="range" role="group" aria-label="price slider">
                       <label class="visually-hidden" for="min">Min price</label>
                       <input id="min" type="range" min="10" value="55" max="190" step="1">
@@ -199,17 +197,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="filter__buttons">
-                  <button class="filter__button" id="filter-submit" type="submit">Apply</button>
-                  <button class="filter__button filter__button--white" id="filter-reset" type="reset">Clear All</button>
-                </div>
-                <button class="filter__close" type="button" id="filter-close">
-                  <span class="visually-hidden">Close popup</span>
-                  <svg width="14" height="14">
-                    <use href="img/sprite.svg#icon-cross"></use>
-                  </svg>
-                </button>
               </div>
+              <div class="filter__buttons">
+                <button class="filter__button" id="filter-submit" type="submit">Apply</button>
+                <button class="filter__button filter__button--white" id="filter-reset" type="reset">Clear All</button>
+              </div>
+
             </form>
           </div>
         </section>
