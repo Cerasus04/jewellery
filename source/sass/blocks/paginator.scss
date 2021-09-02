@@ -4,11 +4,11 @@
   padding-top: 59px;
 
   @media (max-width: $desktop-width) {
-    padding-top: 58px;
+    padding-top: 60px;
   }
 
   @media (max-width: $tablet-width) {
-    padding-top: 37px;
+    padding-top: 26px;
   }
 }
 
@@ -25,11 +25,6 @@
 }
 
 .paginator__prev {
-  // margin-right: 264px;
-
-  @media (max-width: $desktop-width) {
-    // margin-right: 189px;
-  }
   @media (max-width: $tablet-width) {
     display: none;
   }
@@ -53,7 +48,10 @@
 }
 
 .paginator__next {
-  // margin-left: auto;
+
+  @media (max-width: $desktop-width) {
+    margin-left: 19px;
+  }
 
   @media (max-width: $tablet-width) {
     display: none;
