@@ -20,7 +20,7 @@
     overflow: hidden;
   }
 
-  &--nojs {
+  &--login {
     grid-template-rows: min-content 1fr;
     & .modal-login {
       display: block;

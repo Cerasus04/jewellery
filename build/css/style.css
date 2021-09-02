@@ -306,10 +306,10 @@ ul {
   background-color: #ffffff; }
   .page--js {
     overflow: hidden; }
-  .page--nojs {
+  .page--login {
     grid-template-rows: -webkit-min-content 1fr;
     grid-template-rows: min-content 1fr; }
-    .page--nojs .modal-login {
+    .page--login .modal-login {
       display: block; }
 
 .header {

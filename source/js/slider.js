@@ -4,8 +4,12 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 
 (() => {
+  const page = document.querySelector('.page');
   const newInSlider = document.querySelector('.new-in__slider');
-  newInSlider.classList.remove('new-in__slider--nojs');
+
+  if (page.classList.contains('page--main')) {
+    newInSlider.classList.remove('new-in__slider--nojs');
+  }
 
   new Swiper('.new-in__slider', {
     navigation: {

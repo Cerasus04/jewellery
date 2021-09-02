@@ -6,7 +6,9 @@
   const filterCall = document.querySelector('.catalog__filter-button');
   const filterClose = document.querySelector('.filter__close');
 
-  catalogFilter.classList.remove('catalog__filter--nojs');
+  if (page.classList.contains('page--catalog')) {
+    catalogFilter.classList.remove('catalog__filter--nojs');
+  }
 
   const onPopupEscPress = (evt) => {
     if (evt.key === 'Escape') {
@@ -30,5 +32,4 @@
   };
 
   filterCall.addEventListener('click', openFilter);
-
 })();
