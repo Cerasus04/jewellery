@@ -8,9 +8,10 @@ module.exports = {
     './source/js/form.js',
     './source/js/localstorage.js',
     './source/js/range.js',
+    './source/js/popup.js',
     './source/js/slider.js',
-
   ],
+
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'build/js'),

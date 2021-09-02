@@ -78,14 +78,57 @@
     & .catalog__filter-button {
       display: none;
     }
+
+    & .filter__close {
+      display: none;
+    }
+  }
+}
+.catalog__filter-wrapper {
+  @media (max-width: $desktop-width) {
+    display: none;
   }
 }
 
 .catalog__filter--js {
-  @media (max-width: $desktop-width) {
+  & .catalog__filter-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 100vh;
+    overflow: auto;
+    background-color: $basic-white;
+  }
+}
+
+.page--js {
+  @media (max-width: $desktop-width) {
     & .catalog__filter-wrapper {
-      display: none;
+      display: block;
+    }
+
+    & .catalog__form {
+      max-width: 423px;
+      margin: 27px auto 89px 0;
+      box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
+    }
+
+  }
+
+  @media (max-width: $tablet-width) {
+    & .catalog__form {
+      width: calc(100% - 46px);
+      margin: 65px auto 60px;
+
     }
   }
+
 }

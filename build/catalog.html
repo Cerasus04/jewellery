@@ -89,7 +89,7 @@
     <section class="main__catalog catalog">
       <h2 class="visually-hidden">Jewellery shop assortment</h2>
       <div class="catalog__container">
-        <section class="catalog__filter catalog__filter--js"> <!-- catalog__filter--nojs -->
+        <section class="catalog__filter catalog__filter--nojs">
           <h3 class="visually-hidden">Filter products</h3>
           <button class="catalog__filter-button" id="filter">
             Filter
@@ -97,6 +97,12 @@
           <div class="catalog__filter-wrapper">
             <form class="catalog__form filter" action="https://echo.htmlacademy.ru" method="GET">
               <div class="filter__inner accordion">
+                <button class="filter__close" type="button" id="filter-close">
+                  <span class="visually-hidden">Close popup</span>
+                  <svg width="14" height="14">
+                    <use href="img/sprite.svg#icon-cross"></use>
+                  </svg>
+                </button>
                 <div class="filter__block accordion__tab filter__block--product">
                   <h3>Product</h3>
                   <button class="filter__head-button accordion__button" type="button">
@@ -196,12 +202,7 @@
                 <button class="filter__button" id="filter-submit" type="submit">Apply</button>
                 <button class="filter__button filter__button--white" id="filter-reset" type="reset">Clear All</button>
               </div>
-              <button class="filter__close" type="button" id="filter-close">
-                <span class="visually-hidden">Close popup</span>
-                <svg width="14" height="14">
-                  <use href="img/sprite.svg#icon-cross"></use>
-                </svg>
-              </button>
+
             </form>
           </div>
         </section>

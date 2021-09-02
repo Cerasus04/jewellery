@@ -6,6 +6,11 @@
   margin-bottom: 35px;
   border: solid $basic-brown;
   border-width: 1px 0 0;
+
+  @media (max-width: $desktop-width) {
+    position: relative;
+    border: 0;
+  }
 }
 
 .filter__block {
@@ -20,10 +25,24 @@
     padding-bottom: 13px;
     font-size: 16px;
   }
+
+  @media (max-width: $desktop-width) {
+    padding: 34px 21px 13px 20px;
+    border-width: 0 0 1px 0;
+
+    & h3 {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
 }
 
 .filter__content {
   padding: 8px 10px 2px;
+
+  @media (max-width: $desktop-width) {
+    padding: 12px 10px 7px;
+  }
 }
 
 .filter__head-button {
@@ -65,7 +84,7 @@
 
   @media (max-width: $tablet-width)  {
     width: calc(100% - 40px);
-    margin: 0 20px;
+    margin: 0 31px;
   }
 }
 
@@ -94,10 +113,46 @@
 
 .filter__close {
   display: none;
+
+  @media (max-width: $desktop-width)  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    color: $basic-white;
+
+    background-color: $basic-black;
+    border: none;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      color: $basic-black;
+
+      background-color: $basic-white;
+    }
+
+    @media (max-width: $tablet-width) {
+      right: 6px;
+      top: 11px;
+    }
+  }
 }
 
 .filter__item {
   margin-bottom: 10px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 17px;
+  }
 }
 
 .filter__checkbox-label {
@@ -108,6 +163,12 @@
   padding-left: 25px;
   position: relative;
   cursor: pointer;
+
+  @media (max-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 31px;
+  }
 }
 
 .filter__checkbox-label::before {
@@ -118,6 +179,11 @@
   width: 14px;
   height: 14px;
   border: 1px solid $basic-brown;
+
+  @media (max-width: $desktop-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 
@@ -130,4 +196,9 @@
   width: 14px;
   height: 14px;
   border: 1px solid $basic-brown;
+
+  @media (max-width: $desktop-width) {
+    width: 18px;
+    height: 18px;
+  }
 }

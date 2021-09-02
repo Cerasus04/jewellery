@@ -1921,11 +1921,46 @@ ul {
     width: 80%;
     margin: 0 auto; }
     .catalog__filter--nojs .catalog__filter-button {
+      display: none; }
+    .catalog__filter--nojs .filter__close {
       display: none; } }
 
 @media (max-width: 1023px) {
-  .catalog__filter--js .catalog__filter-wrapper {
+  .catalog__filter-wrapper {
     display: none; } }
+
+.catalog__filter--js .catalog__filter-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-height: 100vh;
+  overflow: auto;
+  background-color: #ffffff; }
+
+@media (max-width: 1023px) {
+  .page--js .catalog__filter-wrapper {
+    display: block; }
+  .page--js .catalog__form {
+    max-width: 423px;
+    margin: 27px auto 89px 0;
+    -webkit-box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
+            box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24); } }
+
+@media (max-width: 767px) {
+  .page--js .catalog__form {
+    width: calc(100% - 46px);
+    margin: 65px auto 60px; } }
 
 .filter {
   width: 100%; }
@@ -1934,6 +1969,10 @@ ul {
   margin-bottom: 35px;
   border: solid #a87b62;
   border-width: 1px 0 0; }
+  @media (max-width: 1023px) {
+    .filter__inner {
+      position: relative;
+      border: 0; } }
 
 .filter__block {
   position: relative;
@@ -1945,9 +1984,19 @@ ul {
     padding: 0;
     padding-bottom: 13px;
     font-size: 16px; }
+  @media (max-width: 1023px) {
+    .filter__block {
+      padding: 34px 21px 13px 20px;
+      border-width: 0 0 1px 0; }
+      .filter__block h3 {
+        font-size: 18px;
+        line-height: 23px; } }
 
 .filter__content {
   padding: 8px 10px 2px; }
+  @media (max-width: 1023px) {
+    .filter__content {
+      padding: 12px 10px 7px; } }
 
 .filter__head-button {
   display: none;
@@ -1985,7 +2034,7 @@ ul {
   @media (max-width: 767px) {
     .filter__button {
       width: calc(100% - 40px);
-      margin: 0 20px; } }
+      margin: 0 31px; } }
 
 .filter__button--white {
   margin-top: 25px;
@@ -2004,9 +2053,36 @@ ul {
 
 .filter__close {
   display: none; }
+  @media (max-width: 1023px) {
+    .filter__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      color: #ffffff;
+      background-color: #1d1613;
+      border: none;
+      border-radius: 50%;
+      -webkit-transform: translate(50%, -50%);
+              transform: translate(50%, -50%); }
+      .filter__close:hover, .filter__close:focus {
+        opacity: 0.5; }
+      .filter__close:active {
+        color: #1d1613;
+        background-color: #ffffff; } }
+  @media (max-width: 1023px) and (max-width: 767px) {
+    .filter__close {
+      right: 6px;
+      top: 11px; } }
 
 .filter__item {
   margin-bottom: 10px; }
+  @media (max-width: 1023px) {
+    .filter__item {
+      margin-bottom: 17px; } }
 
 .filter__checkbox-label {
   font-family: "Poppins", "Arial", sans-serif;
@@ -2015,6 +2091,11 @@ ul {
   padding-left: 25px;
   position: relative;
   cursor: pointer; }
+  @media (max-width: 1023px) {
+    .filter__checkbox-label {
+      font-size: 16px;
+      line-height: 21px;
+      padding-left: 31px; } }
 
 .filter__checkbox-label::before {
   content: "";
@@ -2024,6 +2105,10 @@ ul {
   width: 14px;
   height: 14px;
   border: 1px solid #a87b62; }
+  @media (max-width: 1023px) {
+    .filter__checkbox-label::before {
+      width: 18px;
+      height: 18px; } }
 
 :checked + .filter__checkbox-label::after {
   background: #a87b62;
@@ -2034,6 +2119,10 @@ ul {
   width: 14px;
   height: 14px;
   border: 1px solid #a87b62; }
+  @media (max-width: 1023px) {
+    :checked + .filter__checkbox-label::after {
+      width: 18px;
+      height: 18px; } }
 
 .range {
   position: relative;
@@ -2059,6 +2148,12 @@ ul {
   .range::after {
     width: calc((var(--min) - var(--max)) / var(--diff) * 100%);
     margin-left: calc((var(--max) - var(--min-value)) / var(--diff) * 100%); }
+  @media (max-width: 1023px) {
+    .range {
+      width: 75%; } }
+  @media (max-width: 1023px) {
+    .range {
+      width: 100%; } }
 
 .range input[type="range"] {
   z-index: 1;

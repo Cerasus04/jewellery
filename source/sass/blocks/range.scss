@@ -71,6 +71,14 @@
     width: calc((var(--min) - var(--max)) / var(--diff) * 100%);
     margin-left: calc((var(--max) - var(--min-value)) / var(--diff) * 100%);
   }
+
+  @media (max-width: $desktop-width) {
+    width: 75%;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .range input[type="range"] {
