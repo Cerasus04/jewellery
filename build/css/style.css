@@ -309,8 +309,8 @@ ul {
   .page--nojs {
     grid-template-rows: -webkit-min-content 1fr;
     grid-template-rows: min-content 1fr; }
-    .page--nojs .modal-nojs {
-      display: block; }
+  .page .modal-nojs {
+    display: block; }
 
 .header {
   position: relative;

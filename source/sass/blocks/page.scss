@@ -22,9 +22,9 @@
 
   &--nojs {
     grid-template-rows: min-content 1fr;
+  }
 
-    & .modal-nojs {
-      display: block;
-    }
+  & .modal-nojs {
+    display: block;
   }
 }
