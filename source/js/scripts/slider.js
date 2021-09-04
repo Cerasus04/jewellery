@@ -1,8 +1,5 @@
 'use strict';
 
-import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation, Pagination]);
-
 (() => {
   const page = document.querySelector('.page');
   const main = page.querySelector('.main');

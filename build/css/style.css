@@ -1933,16 +1933,16 @@ ul {
   background-color: #ffffff; }
 
 @media (max-width: 1023px) {
-  .page--js .catalog__filter-wrapper {
+  .catalog__filter--js .catalog__filter-wrapper {
     display: block; }
-  .page--js .catalog__form {
+  .catalog__filter--js .catalog__form {
     max-width: 423px;
     margin: 27px auto 89px 0;
     -webkit-box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
             box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24); } }
 
-@media (max-width: 767px) {
-  .page--js .catalog__form {
+@media (max-width: 1023px) and (max-width: 767px) {
+  .catalog__filter--js .catalog__form {
     width: calc(100% - 46px);
     margin: 65px auto 60px; } }
 

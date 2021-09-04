@@ -100,9 +100,7 @@
     overflow: auto;
     background-color: $basic-white;
   }
-}
 
-.page--js {
   @media (max-width: $desktop-width) {
     & .catalog__filter-wrapper {
       display: block;
@@ -113,13 +111,13 @@
       margin: 27px auto 89px 0;
       box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
     }
-  }
 
-  @media (max-width: $tablet-width) {
-    & .catalog__form {
-      width: calc(100% - 46px);
-      margin: 65px auto 60px;
+    @media (max-width: $tablet-width) {
+      & .catalog__form {
+        width: calc(100% - 46px);
+        margin: 65px auto 60px;
 
+      }
     }
   }
 }

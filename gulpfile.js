@@ -17,21 +17,20 @@ const include = require('posthtml-include');
 const del = require('del');
 const path = require('path');
 const ghPages = require('gh-pages');
-const gulpWebpack = require(`webpack-stream`);
-const webpack = require(`webpack`);
+const concat = require('gulp-concat');
 
-gulp.task(`css`, function () {
-  return gulp.src(`source/sass/style.scss`)
+gulp.task('css', function () {
+  return gulp.src('source/sass/style.scss')
       .pipe(plumber())
       .pipe(sourcemap.init())
       .pipe(sass())
       .pipe(postcss([autoprefixer()]))
-      .pipe(rename(`style.css`))
-      .pipe(gulp.dest(`build/css`))
+      .pipe(rename('style.css'))
+      .pipe(gulp.dest('build/css'))
       .pipe(csso())
-      .pipe(rename(`style.min.css`))
-      .pipe(sourcemap.write(`.`))
-      .pipe(gulp.dest(`build/css`))
+      .pipe(rename('style.min.css'))
+      .pipe(sourcemap.write('.'))
+      .pipe(gulp.dest('build/css'))
       .pipe(server.stream());
 });
 
@@ -87,11 +86,18 @@ gulp.task('html', function () {
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('scripts', function () {
-  return gulp
-    .src('source/js/menu.js')
-    .pipe(gulpWebpack(require("./webpack.config"), webpack))
-    .pipe(gulp.dest('build/js'));
+gulp.task('scripts', function() {
+  return gulp.src('source/js/scripts/*.js')
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('build/js'))
+    .pipe(server.stream());
+});
+
+gulp.task('vendors', function() {
+  return gulp.src('source/js/vendors/*.js')
+    .pipe(concat('vendor.js'))
+    .pipe(gulp.dest('build/js'))
+    .pipe(server.stream());
 });
 
 gulp.task('copy', function () {
@@ -117,6 +123,6 @@ gulp.task('publish', function (cb) {
   ghPages.publish('./build', cb);
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'webp', 'html'));
-gulp.task('start', gulp.series('build', 'server', 'scripts'));
+gulp.task('build', gulp.series('clean', 'copy', 'css', 'sprite', 'webp', 'html', 'scripts', 'vendors'));
+gulp.task('start', gulp.series('build', 'server'));
 gulp.task('deploy', gulp.series('build', 'publish'));

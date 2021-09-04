@@ -7,7 +7,6 @@
   const filterCall = document.querySelector('.catalog__filter-button');
   const filterClose = document.querySelector('.filter__close');
 
-
   page.classList.remove('page--nojs');
 
   if (main.classList.contains('main--catalog')) {
@@ -31,6 +30,7 @@
     const closeFilter = (evt) => {
       evt.preventDefault();
       page.classList.remove('page--js');
+      catalogFilter.classList.remove('catalog__filter--js');
       filterClose.removeEventListener('click', closeFilter);
     };
 
