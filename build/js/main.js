@@ -39,7 +39,7 @@
   const name = document.querySelector('#login-email');
   const login = document.querySelector('#login');
   const  focusableElements =
-    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+    'button, [href], input, [tabindex]:not([tabindex="-1"])';
   const firstFocusableElement = login.querySelectorAll(focusableElements)[0];
   const focusableContent = login.querySelectorAll(focusableElements);
   const lastFocusableElement = focusableContent[focusableContent.length - 1];
