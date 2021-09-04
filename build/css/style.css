@@ -2112,7 +2112,7 @@ ul {
       height: 18px; } }
 
 :checked + .filter__checkbox-label::after {
-  background: #a87b62;
+  background-color: #a87b62;
   content: "";
   position: absolute;
   left: 0;
@@ -2140,7 +2140,7 @@ ul {
     content: "";
     height: 1px;
     margin-top: 7.5px;
-    background: #a87b62;
+    background-color: #a87b62;
     grid-column: 1/3;
     grid-row: 1/2; }
   .range::before {
@@ -2180,7 +2180,7 @@ ul {
     position: relative;
     width: 15px;
     height: 15px;
-    background: #a87b62;
+    background-color: #a87b62;
     border: 1px solid #a87b62;
     border-radius: 50%;
     cursor: -webkit-grab;
@@ -2200,7 +2200,7 @@ ul {
     position: relative;
     width: 15px;
     height: 15px;
-    background: #a87b62;
+    background-color: #a87b62;
     border: 1px solid #a87b62;
     border-radius: 50%;
     cursor: grab;

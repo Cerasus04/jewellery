@@ -11,7 +11,7 @@
   width: 15px;
   height: 15px;
 
-  background: $basic-brown;
+  background-color: $basic-brown;
   border: 1px solid $basic-brown;
   border-radius: 50%;
   cursor: grab;
@@ -56,7 +56,7 @@
     height: 1px;
     margin-top: 7.5px;
 
-    background: $basic-brown;
+    background-color: $basic-brown;
 
     grid-column: 1/3;
     grid-row: 1/2;

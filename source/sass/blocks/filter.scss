@@ -180,7 +180,7 @@
 
 
 :checked + .filter__checkbox-label::after {
-  background: $basic-brown;
+  background-color: $basic-brown;
   content: "";
   position: absolute;
   left: 0;

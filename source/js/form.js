@@ -1,4 +1,5 @@
 'use strict';
+
 (() => {
   const page = document.querySelector('.page');
   const btnCall = document.querySelector('.header__login');
