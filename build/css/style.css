@@ -757,8 +757,7 @@ ul {
             letter-spacing: 0.03em; } }
 
 .promo--catalog {
-  padding-top: 93px;
-  padding-bottom: 95px;
+  padding: 93px 15px 95px;
   background-image: url("../img/bg-promo-catalog.jpg");
   -webkit-box-shadow: unset;
           box-shadow: unset; }
@@ -779,9 +778,7 @@ ul {
           line-height: 30px; } }
   @media (max-width: 1023px) {
     .promo--catalog {
-      padding-top: 92px;
-      padding-bottom: 92px;
-      padding-left: 30px;
+      padding: 92px 15px 92px;
       background-image: url("../img/bg-promo-catalog-tablet.jpg"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
     .promo--catalog {
@@ -792,7 +789,6 @@ ul {
   @media (max-width: 767px) {
     .promo--catalog {
       padding: 84px 15px 78px;
-      padding-bottom: 78px;
       background-image: url("../img/bg-promo-catalog-mobile.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
     .promo--catalog {
@@ -894,11 +890,11 @@ ul {
 
 .new-in__slider-pagination .swiper-pagination-bullet {
   display: inline-block;
+  vertical-align: middle;
   padding-right: 7px;
   padding-left: 5px;
   font-size: 16px;
   background-color: transparent;
-  vertical-align: middle;
   cursor: pointer;
   color: #9b9997; }
   .new-in__slider-pagination .swiper-pagination-bullet:hover, .new-in__slider-pagination .swiper-pagination-bullet:focus {
@@ -953,9 +949,7 @@ ul {
   text-align: center; }
   @media (max-width: 767px) {
     .product-card__description {
-      padding-top: 15px;
-      padding-right: 0;
-      padding-left: 0; } }
+      padding-top: 15px; } }
   .product-card__description p {
     margin: 0;
     font-weight: 500;
@@ -1888,17 +1882,6 @@ ul {
 .catalog__filter {
   grid-area: filter; }
 
-.catalog__wrapper {
-  min-height: 456px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: red; }
-
 .catalog__filter-button {
   display: none; }
   @media (max-width: 1023px) {
@@ -2060,7 +2043,6 @@ ul {
       top: 0;
       right: 0;
       display: block;
-      position: absolute;
       width: 32px;
       height: 32px;
       color: #ffffff;
@@ -2112,13 +2094,13 @@ ul {
       height: 18px; } }
 
 :checked + .filter__checkbox-label::after {
-  background-color: #a87b62;
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 14px;
   height: 14px;
+  background-color: #a87b62;
   border: 1px solid #a87b62; }
   @media (max-width: 1023px) {
     :checked + .filter__checkbox-label::after {

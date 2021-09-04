@@ -79,8 +79,7 @@
 }
 
 .promo--catalog {
-  padding-top: 93px;
-  padding-bottom: 95px;
+  padding: 93px 15px 95px;
   background-image: url("../img/bg-promo-catalog.jpg");
   box-shadow: unset;
 
@@ -106,9 +105,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    padding-top: 92px;
-    padding-bottom: 92px;
-    padding-left: 30px;
+    padding: 92px 15px 92px;
     background-image: url("../img/bg-promo-catalog-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -122,7 +119,6 @@
 
   @media (max-width: $tablet-width) {
     padding: 84px 15px 78px;
-    padding-bottom: 78px;
     background-image: url("../img/bg-promo-catalog-mobile.jpg");
 
     @media (min-resolution: 2dppx) {

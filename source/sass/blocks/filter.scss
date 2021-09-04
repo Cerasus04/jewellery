@@ -114,7 +114,6 @@
     top: 0;
     right: 0;
     display: block;
-    position: absolute;
     width: 32px;
     height: 32px;
     color: $basic-white;
@@ -180,13 +179,13 @@
 
 
 :checked + .filter__checkbox-label::after {
-  background-color: $basic-brown;
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 14px;
   height: 14px;
+  background-color: $basic-brown;
   border: 1px solid $basic-brown;
 
   @media (max-width: $desktop-width) {
