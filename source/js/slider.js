@@ -5,9 +5,12 @@ Swiper.use([Navigation, Pagination]);
 
 (() => {
   const page = document.querySelector('.page');
+  const main = page.querySelector('.main');
   const newInSlider = document.querySelector('.new-in__slider');
 
-  if (page.classList.contains('page--main')) {
+  page.classList.remove('.page--nojs');
+
+  if (main.classList.contains('main--main')) {
     newInSlider.classList.remove('new-in__slider--nojs');
   }
 

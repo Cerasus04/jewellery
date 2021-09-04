@@ -12417,6 +12417,7 @@ var __webpack_exports__ = {};
   const btnCall = document.querySelector('.header__login');
   const btnCallMobile = document.querySelector('.user-menu__modal-login');
 
+  page.classList.remove('page--nojs');
   header.classList.remove('header--nojs');
   headerContainer.classList.remove('header__container--nojs');
 
@@ -12492,6 +12493,8 @@ var __webpack_exports__ = {};
   const firstFocusableElement = login.querySelectorAll(focusableElements)[0];
   const focusableContent = login.querySelectorAll(focusableElements);
   const lastFocusableElement = focusableContent[focusableContent.length - 1];
+
+  page.classList.remove('page--nojs');
 
   const onPopupEscPress = (evt) => {
     if (evt.key === 'Escape') {
@@ -12618,9 +12621,12 @@ swiper__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper__WEBPACK_IMPORTED_MODULE
 
 (() => {
   const page = document.querySelector('.page');
+  const main = page.querySelector('.main');
   const newInSlider = document.querySelector('.new-in__slider');
 
-  if (page.classList.contains('page--main')) {
+  page.classList.remove('.page--nojs');
+
+  if (main.classList.contains('main--main')) {
     newInSlider.classList.remove('new-in__slider--nojs');
   }
 
@@ -12686,36 +12692,40 @@ swiper__WEBPACK_IMPORTED_MODULE_0__.default.use([swiper__WEBPACK_IMPORTED_MODULE
 
 (() => {
   const page = document.querySelector('.page');
+  const main = page.querySelector('.main');
   const catalogFilter = document.querySelector('.catalog__filter');
   const filterCall = document.querySelector('.catalog__filter-button');
   const filterClose = document.querySelector('.filter__close');
 
-  if (page.classList.contains('page--catalog')) {
+
+  page.classList.remove('page--nojs');
+
+  if (main.classList.contains('main--catalog')) {
     catalogFilter.classList.remove('catalog__filter--nojs');
-  }
 
-  const onPopupEscPress = (evt) => {
-    if (evt.key === 'Escape') {
+    const onPopupEscPress = (evt) => {
+      if (evt.key === 'Escape') {
+        evt.preventDefault();
+        closeFilter(evt);
+      }
+    };
+
+    const openFilter = (evt) => {
       evt.preventDefault();
-      closeFilter(evt);
-    }
-  };
+      page.classList.add('page--js');
+      catalogFilter.classList.add('catalog__filter--js');
+      filterClose.addEventListener('click', closeFilter);
+      document.addEventListener('keydown', onPopupEscPress);
+    };
 
-  const openFilter = (evt) => {
-    evt.preventDefault();
-    page.classList.add('page--js');
-    catalogFilter.classList.add('catalog__filter--js');
-    filterClose.addEventListener('click', closeFilter);
-    document.addEventListener('keydown', onPopupEscPress);
-  };
+    const closeFilter = (evt) => {
+      evt.preventDefault();
+      page.classList.remove('page--js');
+      filterClose.removeEventListener('click', closeFilter);
+    };
 
-  const closeFilter = (evt) => {
-    evt.preventDefault();
-    page.classList.remove('page--js');
-    filterClose.removeEventListener('click', closeFilter);
-  };
-
-  filterCall.addEventListener('click', openFilter);
+    filterCall.addEventListener('click', openFilter);
+  }
 })();
 
 }();

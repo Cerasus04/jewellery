@@ -16,6 +16,8 @@
   const focusableContent = login.querySelectorAll(focusableElements);
   const lastFocusableElement = focusableContent[focusableContent.length - 1];
 
+  page.classList.remove('page--nojs');
+
   const onPopupEscPress = (evt) => {
     if (evt.key === 'Escape') {
       evt.preventDefault();

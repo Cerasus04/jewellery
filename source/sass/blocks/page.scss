@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 21px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   word-wrap: normal;
   color: $text-black;
   background-color: $basic-white;
@@ -20,9 +20,10 @@
     overflow: hidden;
   }
 
-  &--login {
+  &--nojs {
     grid-template-rows: min-content 1fr;
-    & .modal-login {
+
+    & .modal-nojs {
       display: block;
     }
   }

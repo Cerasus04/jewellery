@@ -11,7 +11,7 @@
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="page page--catalog">
+<body class="page page--nojs">
   <header class="page__header header header--nojs">
     <div class="header__container header__container--nojs">
       <div class="header__top">
@@ -81,7 +81,7 @@
       </a>
     </div>
   </header>
-  <main class="page__main main">
+  <main class="page__main main main--catalog">
     <h1 class="visually-hidden">Jewellery shop Catalog</h1>
     <section class="main__promo promo promo--catalog">
       <h2><span>All jewellery </span><br>Discover picks of fashion's finest trends in our jewellery catalog</h2>
@@ -91,7 +91,7 @@
       <div class="catalog__container">
         <section class="catalog__filter catalog__filter--nojs">
           <h3 class="visually-hidden">Filter products</h3>
-          <button class="catalog__filter-button" id="filter">
+          <button class="catalog__filter-button" id="filter" type="button">
             Filter
           </button>
           <div class="catalog__filter-wrapper">

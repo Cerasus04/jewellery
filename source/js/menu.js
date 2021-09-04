@@ -9,6 +9,7 @@
   const btnCall = document.querySelector('.header__login');
   const btnCallMobile = document.querySelector('.user-menu__modal-login');
 
+  page.classList.remove('page--nojs');
   header.classList.remove('header--nojs');
   headerContainer.classList.remove('header__container--nojs');
 
