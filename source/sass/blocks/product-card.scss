@@ -6,20 +6,10 @@
 
 .product-card__image {
   grid-row: 1 / 2;
-  min-height: 270px;
-
-  @media (max-width: $desktop-width) {
-    min-height: 324px;
-  }
-
-  @media (max-width: $tablet-width) {
-    min-height: 136px;
-  }
 }
 
 .product-card__description {
   grid-row: 2 / 3;
-
   width: 100%;
   padding: 22px 0 23px;
   text-align: center;

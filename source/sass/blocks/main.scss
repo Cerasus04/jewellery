@@ -34,18 +34,10 @@
   padding: 101px 96px 76px;
 
   @media (max-width: $desktop-width) {
-    padding: 68px 45px 80px;
+    padding: 68px 45px 50px;
   }
 
   @media (max-width: $tablet-width) {
     padding: 53px 15px 45px;
   }
 }
-
-
-// .main--login {
-//   grid-template-rows: min-content 1fr;
-//   & .modal-login {
-//     display: block;
-//   }
-// }

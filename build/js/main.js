@@ -61,7 +61,7 @@
     btnCloseCall.addEventListener('click', closePopup);
     document.addEventListener('keydown', onPopupEscPress);
     overlayCall.addEventListener('click', closePopup);
-    btnSubmit.addEventListener('click', closePopup);
+    // btnSubmit.addEventListener('click', closePopup);
     name.focus();
   };
 
@@ -73,7 +73,7 @@
     btnCloseCall.removeEventListener('click', closePopup);
     document.removeEventListener('keydown', onPopupEscPress);
     overlayCall.removeEventListener('click', closePopup);
-    btnSubmit.removeEventListener('click', closePopup);
+    // btnSubmit.removeEventListener('click', closePopup);
   };
 
 document.addEventListener('keydown', function(e) {

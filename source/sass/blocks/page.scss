@@ -1,7 +1,7 @@
 .page {
   position: relative;
   display: grid;
-  grid-template-rows: 1fr min-content 1fr;
+  grid-template-rows: min-content 1fr;
   min-width: $mobile-width;
   min-height: 100%;
   margin: 0 auto;
@@ -18,10 +18,6 @@
 
   &--js {
     overflow: hidden;
-  }
-
-  &--nojs {
-    grid-template-rows: min-content 1fr;
   }
 
   & .modal-nojs {
