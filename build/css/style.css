@@ -2103,6 +2103,11 @@ ul {
       width: 18px;
       height: 18px; } }
 
+.filter__input:hover + label::before,
+.filter__input:focus + label::before {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5); }
+
 .range {
   position: relative;
   display: grid;

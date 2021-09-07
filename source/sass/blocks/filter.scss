@@ -193,3 +193,8 @@
     height: 18px;
   }
 }
+
+.filter__input:hover + label::before,
+.filter__input:focus + label::before {
+  transform: scale(1.5);
+}

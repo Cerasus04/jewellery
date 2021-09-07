@@ -35,7 +35,6 @@
   const overlayCall = document.querySelector('.overlay');
   const popupModal = document.querySelector('.modal-login');
   const btnCloseCall = popupModal.querySelector('.modal-login__close');
-  const btnSubmit = popupModal.querySelector('.modal-login__button');
   const name = document.querySelector('#login-email');
   const login = document.querySelector('#login');
   const  focusableElements =
@@ -61,7 +60,6 @@
     btnCloseCall.addEventListener('click', closePopup);
     document.addEventListener('keydown', onPopupEscPress);
     overlayCall.addEventListener('click', closePopup);
-    // btnSubmit.addEventListener('click', closePopup);
     name.focus();
   };
 
@@ -73,7 +71,6 @@
     btnCloseCall.removeEventListener('click', closePopup);
     document.removeEventListener('keydown', onPopupEscPress);
     overlayCall.removeEventListener('click', closePopup);
-    // btnSubmit.removeEventListener('click', closePopup);
   };
 
 document.addEventListener('keydown', function(e) {
