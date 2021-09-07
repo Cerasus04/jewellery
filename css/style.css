@@ -1244,8 +1244,8 @@ ul {
 
 .faq__button {
   display: none;
-  padding-top: 50px;
-  padding-right: 47px; }
+  padding: 50px 47px 50px 0;
+  bottom: 0; }
 
 .accordion--js .faq__item:not(.accordion__tab--open) {
   padding-bottom: 48px; }
@@ -1988,7 +1988,7 @@ ul {
 
 .filter__head-button {
   display: none;
-  padding: 25px 19px 5px; }
+  padding: 25px 19px 29px; }
 
 .filter__button {
   display: -webkit-box;
