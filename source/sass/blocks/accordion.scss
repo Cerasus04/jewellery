@@ -32,10 +32,6 @@
   border: none;
   cursor: pointer;
 
-  &:hover {
-    background-color: rgba($basic-black, 0.1);
-  }
-
   @media (max-width: $desktop-width) {
     padding-right: 52px;
   }
