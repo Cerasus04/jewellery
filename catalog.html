@@ -15,13 +15,22 @@
   <header class="page__header header header--nojs">
     <div class="header__container header__container--nojs">
       <div class="header__top">
+        <form action="https://echo.htmlacademy.ru" class="header__search" method="POST">
+          <label for="search">
+            <svg width="14" height="14">
+              <use href="img/sprite.svg#icon-search"></use>
+            </svg>
+            <span class="visually-hidden">Site search</span>
+          </label>
+          <input type="search" id="search" name="search" placeholder="Type here to search">
+        </form>
         <button class="header__burger-btn" aria-label="Menu">
           <svg width="25" height="18">
             <use href="img/sprite.svg#icon-burger"></use>
           </svg>
         </button>
         <div class="header__logo">
-          <a href="main.html" aria-label="Logo Jewellery" id="top">
+          <a href="index.html" aria-label="Logo Jewellery" id="top">
             <svg width="66" height="66">
               <use href="img/sprite.svg#icon-logo"></use>
             </svg>
@@ -38,47 +47,40 @@
           </a>
         </div>
       </div>
-      <form action="https://echo.htmlacademy.ru" class="header__search" method="POST">
-        <label for="search">
-          <svg width="14" height="14">
-            <use href="img/sprite.svg#icon-search"></use>
-          </svg>
-          <span class="visually-hidden">Site search</span>
-        </label>
-        <input type="search" id="search" name="search" placeholder="Type here to search">
-      </form>
-      <nav class="header__nav" id="menu">
-        <ul class="header__nav-list nav-list">
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">What’s new</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link">Chokers</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Necklaces</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Rings</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Earrings</a>
-          </li>
-        </ul>
-        <ul class="header__sub-nav sub-list">
-          <li class="sub-list__item">
-            <a href="#" class="sub-list__link">About CH</a>
-          </li>
-          <li class="sub-list__item">
-            <a href="#" class="sub-list__link">Stores & Hours</a>
-          </li>
-          <li class="sub-list__item">
-            <a href="#" class="sub-list__link">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="login.html" class="header__login" aria-label="Enter modal-login">Login
-      </a>
+      <div class="header__bottom">
+        <nav class="header__nav" id="menu">
+          <ul class="header__nav-list nav-list">
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">What’s new</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="catalog.html" class="nav-list__link">Chokers</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Necklaces</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Rings</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Earrings</a>
+            </li>
+          </ul>
+          <ul class="header__sub-nav sub-list">
+            <li class="sub-list__item">
+              <a href="#" class="sub-list__link">About CH</a>
+            </li>
+            <li class="sub-list__item">
+              <a href="#" class="sub-list__link">Stores & Hours</a>
+            </li>
+            <li class="sub-list__item">
+              <a href="#" class="sub-list__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__login" href="login.html" aria-label="Enter modal-login">Login
+        </a>
+      </div>
     </div>
   </header>
   <main class="page__main main main--catalog">
@@ -115,19 +117,19 @@
                   <div class="filter__content accordion__content">
                     <ul class="filter__list accordion__inner">
                       <li class="filter__item">
-                        <input type="checkbox" class="visually-hidden" id="necklaces" name="necklaces" value="necklaces" checked="">
+                        <input type="checkbox" class="filter__input visually-hidden" id="necklaces" name="necklaces" value="necklaces" checked="">
                         <label class="filter__checkbox-label" for="necklaces">Necklaces</label>
                       </li>
                       <li class="filter__item">
-                        <input type="checkbox" class="visually-hidden" id="chokers" name="chokers" value="chokers" checked="">
+                        <input type="checkbox" class="filter__input visually-hidden" id="chokers" name="chokers" value="chokers" checked="">
                         <label class="filter__checkbox-label" for="chokers">Chokers</label>
                       </li>
                       <li class="filter__item">
-                        <input type="checkbox" class="visually-hidden" id="rings" name="rings" value="rings">
+                        <input type="checkbox" class="filter__input visually-hidden" id="rings" name="rings" value="rings">
                         <label class="filter__checkbox-label" for="rings">Rings</label>
                       </li>
                       <li class="filter__item">
-                        <input type="checkbox" class="visually-hidden" id="earrings" name="earrings" value="earrings" checked="">
+                        <input type="checkbox" class="filter__input visually-hidden" id="earrings" name="earrings" value="earrings" checked="">
                         <label class="filter__checkbox-label" for="earrings">Earrings</label>
                       </li>
                     </ul>
@@ -145,11 +147,11 @@
                   <div class="filter__content accordion__content">
                     <ul class="filter__list accordion__inner">
                       <li class="filter__item">
-                        <input type="checkbox" class="visually-hidden" id="gold" name="gold" value="gold" checked="">
+                        <input type="checkbox" class="filter__input visually-hidden" id="gold" name="gold" value="gold" checked="">
                         <label class="filter__checkbox-label" for="gold">Gold</label>
                       </li>
                       <li class="filter__item">
-                        <input type="checkbox" class="visually-hidden" id="silver" name="silver" value="silver">
+                        <input type="checkbox" class="filter__input visually-hidden" id="silver" name="silver" value="silver">
                         <label class="filter__checkbox-label" for="silver">Silver</label>
                       </li>
                     </ul>
@@ -167,11 +169,11 @@
                   <div class="filter__content accordion__content">
                     <ul class="filter__list accordion__inner">
                       <li class="filter__item">
-                        <input type="checkbox" class="visually-hidden" id="flamingo" name="flamingo" value="flamingo">
+                        <input type="checkbox" class="filter__input visually-hidden" id="flamingo" name="flamingo" value="flamingo">
                         <label class="filter__checkbox-label" for="flamingo">Pink flamingo</label>
                       </li>
                       <li class="filter__item">
-                        <input type="checkbox" class="visually-hidden" id="dreams" name="dreams" value="dreams" checked="">
+                        <input type="checkbox" class="filter__input visually-hidden" id="dreams" name="dreams" value="dreams" checked="">
                         <label class="filter__checkbox-label" for="dreams">Dreams</label>
                       </li>
                     </ul>
@@ -521,7 +523,7 @@
   </footer>
   <div class="overlay"></div>
   <div class="modal-login" tabindex="0" id="login">
-    <h2>Log in</h2>
+    <h2>Log In</h2>
     <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="POST" id="login-form">
       <div class="modal-login__container">
         <div class="modal-login__field">
@@ -537,7 +539,7 @@
           </label>
           <a href="#">Forgot your password?</a>
         </div>
-        <button class="modal-login__button" type="submit">Log in</button>
+        <button class="modal-login__button" type="submit">Log In</button>
         <p>
           <span>Don’t have an account?</span>
           <a href="#">Sign up</a>
