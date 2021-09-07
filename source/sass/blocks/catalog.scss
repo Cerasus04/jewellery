@@ -1,11 +1,11 @@
 .catalog__container {
   display: grid;
   grid-template-areas: "filter items";
-  grid-template-columns: 21% 1fr;
-  gap: 56px;
+  grid-template-columns: 21.5% 1fr;
+  gap: 50px;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 80px 98px 76px;
+  padding: 80px 98px 73px;
 
   @media (max-width: $desktop-width) {
     padding: 50px 45px 78px;

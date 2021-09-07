@@ -10,15 +10,15 @@
 }
 
 .gallery__link {
-  margin: 30px 50px 62px;
+  margin: 30px 50px 60px;
 
   @media (max-width: $desktop-width) {
     margin-top: 19px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-top: 24px;
-    margin-bottom: 45px;
+    margin-top: 17px;
+    margin-bottom: 47px;
   }
 }
 
@@ -36,10 +36,10 @@
   }
 
   @media (max-width: $tablet-width) {
-    row-gap: 26px;
+    row-gap: 25px;
     column-gap: 24px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 35% 22% 24%;
+    grid-template-rows: 35% 22% 23%;
   }
 }
 

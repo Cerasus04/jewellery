@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  padding: 180px 15px 182px 15px;
+  padding: 181px 15px;
   font-family: $cormorant;
   text-align: center;
   color: $basic-white;
@@ -25,7 +25,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    padding-right: 30px;
+    padding-right: 37px;
     background-image: url("../img/bg-promo-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -50,12 +50,11 @@
     font-weight: 400;
     font-size: 38px;
     line-height: 43px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0;
 
     @media (max-width: $tablet-width) {
       font-size: 34px;
       line-height: 36px;
-      letter-spacing: 0;
     }
 
     & span {
@@ -69,10 +68,6 @@
       @media (max-width: $tablet-width) {
         font-size: 38px;
         line-height: 47px;
-
-        & span {
-          letter-spacing: 0.03em;
-        }
       }
     }
   }
@@ -90,7 +85,7 @@
   & h2 {
     width: 540px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 33px;
 
     & span {
@@ -114,6 +109,7 @@
 
     & h2 {
       width: 100%;
+      font-size: 20px;
     }
   }
 

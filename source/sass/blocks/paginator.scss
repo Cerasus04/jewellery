@@ -1,7 +1,7 @@
 .paginator {
   display: flex;
   justify-content: flex-start;
-  padding-top: 59px;
+  padding-top: 66px;
 
   @media (max-width: $desktop-width) {
     padding-top: 60px;
@@ -14,9 +14,10 @@
 
 .paginator__list {
   display: flex;
-  justify-content: center;
-  width: 25%;
+  justify-content: space-between;
+  width: 20%;
   margin: 0 auto;
+  padding: 0 55px 0 21px;
   box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
@@ -31,7 +32,7 @@
 }
 
 .paginator__item {
-  margin-right: 13px;
+  // margin-right: 13px;
   color: $placeholder-grey;
 
   @media (max-width: $tablet-width) {

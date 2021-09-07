@@ -15,13 +15,22 @@
   <header class="page__header header header--nojs">
     <div class="header__container header__container--nojs">
       <div class="header__top">
+        <form action="https://echo.htmlacademy.ru" class="header__search" method="POST">
+          <label for="search">
+            <svg width="14" height="14">
+              <use href="img/sprite.svg#icon-search"></use>
+            </svg>
+            <span class="visually-hidden">Site search</span>
+          </label>
+          <input type="search" id="search" name="search" placeholder="Type here to search">
+        </form>
         <button class="header__burger-btn" aria-label="Menu">
           <svg width="25" height="18">
             <use href="img/sprite.svg#icon-burger"></use>
           </svg>
         </button>
         <div class="header__logo">
-          <a href="main.html" aria-label="Logo Jewellery" id="top">
+          <a href="index.html" aria-label="Logo Jewellery" id="top">
             <svg width="66" height="66">
               <use href="img/sprite.svg#icon-logo"></use>
             </svg>
@@ -38,47 +47,40 @@
           </a>
         </div>
       </div>
-      <form action="https://echo.htmlacademy.ru" class="header__search" method="POST">
-        <label for="search">
-          <svg width="14" height="14">
-            <use href="img/sprite.svg#icon-search"></use>
-          </svg>
-          <span class="visually-hidden">Site search</span>
-        </label>
-        <input type="search" id="search" name="search" placeholder="Type here to search">
-      </form>
-      <nav class="header__nav" id="menu">
-        <ul class="header__nav-list nav-list">
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">What’s new</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link">Chokers</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Necklaces</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Rings</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Earrings</a>
-          </li>
-        </ul>
-        <ul class="header__sub-nav sub-list">
-          <li class="sub-list__item">
-            <a href="#" class="sub-list__link">About CH</a>
-          </li>
-          <li class="sub-list__item">
-            <a href="#" class="sub-list__link">Stores & Hours</a>
-          </li>
-          <li class="sub-list__item">
-            <a href="#" class="sub-list__link">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="login.html" class="header__login" aria-label="Enter modal-login">Login
-      </a>
+      <div class="header__bottom">
+        <nav class="header__nav" id="menu">
+          <ul class="header__nav-list nav-list">
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">What’s new</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="catalog.html" class="nav-list__link">Chokers</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Necklaces</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Rings</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Earrings</a>
+            </li>
+          </ul>
+          <ul class="header__sub-nav sub-list">
+            <li class="sub-list__item">
+              <a href="#" class="sub-list__link">About CH</a>
+            </li>
+            <li class="sub-list__item">
+              <a href="#" class="sub-list__link">Stores & Hours</a>
+            </li>
+            <li class="sub-list__item">
+              <a href="#" class="sub-list__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__login" href="login.html" aria-label="Enter modal-login">Login
+        </a>
+      </div>
     </div>
   </header>
   <main class="page__main main main--catalog">
