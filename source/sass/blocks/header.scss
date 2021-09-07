@@ -87,6 +87,8 @@
     position: absolute;
     top: 1%;
     left: 1%;
+    width: 14px;
+    height: 14px;
   }
 
   & input {
@@ -134,7 +136,7 @@
 }
 
 .header__bottom {
-  width: 49%;
+  width: 80%;
   margin: 36px auto 0;
 
   @media (max-width: $desktop-width) {
@@ -143,6 +145,9 @@
   }
 }
 .header__nav {
+  width: 61%;
+  margin: 0 auto;
+
   @media (max-width: $desktop-width) {
     display: none;
     position: relative;
