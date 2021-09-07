@@ -1280,8 +1280,6 @@ ul {
   background-color: transparent;
   border: none;
   cursor: pointer; }
-  .accordion--js .accordion__button:hover {
-    background-color: rgba(29, 22, 19, 0.1); }
   @media (max-width: 1023px) {
     .accordion--js .accordion__button {
       padding-right: 52px; } }
@@ -1991,8 +1989,7 @@ ul {
 
 .filter__head-button {
   display: none;
-  padding-top: 25px;
-  padding-right: 19px; }
+  padding: 25px 19px 5px; }
 
 .filter__button {
   display: -webkit-box;
