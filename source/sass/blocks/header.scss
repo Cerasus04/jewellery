@@ -82,17 +82,15 @@
   position: relative;
   width: 17.5%;
   order: -1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   & label {
-    position: absolute;
-    top: 1%;
-    left: 1%;
-    width: 14px;
-    height: 14px;
+    margin-right: 14px;
   }
 
   & input {
-    padding-left: 33px;
     border: 0;
     font-family: inherit;
     font-size: 14px;
@@ -121,6 +119,7 @@
     }
 
     & label {
+      position: absolute;
       top: 13px;
       left: 16px;
 
@@ -136,7 +135,7 @@
 }
 
 .header__bottom {
-  width: 80%;
+  width: 84%;
   margin: 36px auto 0;
 
   @media (max-width: $desktop-width) {
@@ -145,7 +144,7 @@
   }
 }
 .header__nav {
-  width: 61%;
+  width: 59%;
   margin: 0 auto;
 
   @media (max-width: $desktop-width) {
